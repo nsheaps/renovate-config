@@ -11,11 +11,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - uses: qoomon/actions--context@v4
+        id: additional-context
       - id: get-job-url
         uses: pl-strflt/job-summary-url-action@v1
         continue-on-error: true
         with:
-          job: ${{ github.jobs[github.job].name }}
+          job: ${{ steps.additional-context.outputs.job-name }}
 
       - name: Checkout code
         uses: actions/checkout@v4
