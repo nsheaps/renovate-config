@@ -3,6 +3,7 @@
     "esbenp.prettier-vscode",
     "mrmlnc.vscode-json5",
     "editorconfig.editorconfig",
-    "biomejs.biome"
+    "biomejs.biome",
+    "timonwong.shellcheck"
   ]
 }
