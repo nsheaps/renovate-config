@@ -57,6 +57,7 @@ jobs:
         with:
           comment-id: ${{ steps.fc.outputs.comment-id }}
           issue-number: ${{ github.event.pull_request.number }}
+          edit-mode: replace
           body: |
             ## Renovate dry run results[^1]
 
