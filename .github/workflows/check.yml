@@ -1,13 +1,20 @@
-name: Check
+name: check
 
 on:
   push:
     branches:
       - main
-  pull_request:
+  pull_request: {}
+
+# when running in a PR, cancel in progress, use the same group
+# when not, use the sha so every commit gets built and not cancelled
+# don't use concurrency at the job level, it's not guaranteed
+concurrency:
+  group: "${{ github.workflow }}-${{ github.event_name == 'pull_request' && github.ref || github.sha }}"
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
-  check:
+  lint-and-format:
     runs-on: ubuntu-latest
 
     steps:
@@ -27,3 +34,8 @@ jobs:
 
       - name: Run checks
         run: yarn check
+  renovate:
+    if: github.event_name == 'pull_request'
+    uses: ./.github/workflows/renovate-pr.yml
+    secrets: inherit
+

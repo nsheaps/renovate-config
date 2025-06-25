@@ -1,0 +1,68 @@
+#!/usr/bin/env bash
+# Lints (and, optionally, fixes) all Shell
+
+set -euo pipefail
+
+SCRIPTDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+# shellcheck source=./lib/stdlib.sh
+source "$SCRIPTDIR/lib/stdlib.sh"
+
+extensions=(sh bash)
+
+usage() {
+  echo "Usage: $(basename "$0") [FLAGS]"
+  echo
+  echo "FLAGS"
+  echo "  --fix              Fix problems that can be fixed automatically"
+  echo "  --help,-h          Show this help page"
+}
+
+# find_shell_cache_file is used by [find_shell] as a run-once mechanism.
+find_shell_cache_file=""
+
+# find_shell returns all shell files in the current repository, newline
+# separated. This function's output is cached, meaning it will only
+# generate its output once per run.
+find_shell() {
+  if [[ -n "${find_shell_cache_file:-}" ]]; then
+    cat "$find_shell_cache_file"
+    return
+  fi
+
+  find_shell_cache_file=$(mktemp)
+  trap 'rm -f "$find_shell_cache_file"' EXIT
+  {
+    find_files_with_extensions "${extensions[@]}"
+    # Find files without .sh that are also bash scripts.
+    find_files "bin/" | grep -v "\." | xargs grep -l '^#!.*\bbash\b'
+  } | sort | uniq | tee "$find_shell_cache_file"
+}
+
+shellcheck_linter() {
+  find_shell | xargs shellcheck \
+    --rcfile="$ROOT_DIR/.shellcheckrc" --source-path SCRIPTDIR
+}
+
+shellfmt_linter() {
+  find_shell | xargs shfmt --diff
+}
+
+shellfmt_formatter() {
+  find_shell | xargs shfmt --write --list
+}
+
+FIX=false
+if [[ "${1:-}" == "--fix" ]]; then
+  FIX=true
+elif [[ "${1:-}" == "--help" ]] || [[ "${1:-}" == "-h" ]]; then
+  usage
+  exit
+fi
+
+if [[ "$FIX" == "true" ]]; then
+  shellfmt_formatter
+else
+  shellcheck_linter
+  shellfmt_linter
+fi
