@@ -2,7 +2,10 @@
 
 set -euo pipefail
 
-# make sure nvm is available so that the script uses v20
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+cd "$SCRIPT_DIR/.."
+
+# make sure nvm is available so that the script uses the version from .nvmrc
 #
 # shellcheck disable=SC1091 # Can't load $HOME/.nvm
 load_nvm() {
@@ -14,6 +17,6 @@ load_nvm() {
 load_nvm
 
 export LOG_LEVEL=debug
-nvm install 20
-nvm exec 20 npx --yes --package renovate -- \
+nvm install "$(cat .nvmrc)"
+nvm exec "$(cat .nvmrc)" npx --yes --package renovate -- \
   renovate --dry-run --token "$(gh auth token)" --platform=local

@@ -1,6 +1,9 @@
 {
   "name": "@nsheaps/renovate-config",
   "packageManager": "yarn@4.6.0",
+  "engines": {
+    "node": ">=22.15.1"
+  },
   "scripts": {
     "check": "yarn run check:lint && yarn run check:format",
     "check:format": "biome format .",
