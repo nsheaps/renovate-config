@@ -1,0 +1,120 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.0.5/schema.json",
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true
+  },
+  "files": {
+    "ignoreUnknown": false,
+    "includes": [
+      "**/*.js",
+      "**/*.jsx",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.json",
+      "**/*.json5",
+      "**/*.md"
+    ],
+    "experimentalScannerIgnores": [
+      "node_modules/**",
+      ".yarn/**",
+      "*.min.js",
+      "*.min.css",
+      "*.bundle.js",
+      "*.log",
+      "*.tmp",
+      "*.temp",
+      ".DS_Store",
+      "Thumbs.db",
+      "*.pid",
+      "*.seed",
+      "*.pid.lock",
+      "coverage/**",
+      "*.lcov",
+      ".nyc_output",
+      "jspm_packages/**",
+      ".npm",
+      ".eslintcache",
+      ".rpt2_cache/**",
+      ".rts2_cache_cjs/**",
+      ".rts2_cache_es/**",
+      ".rts2_cache_umd/**",
+      ".node_repl_history",
+      "*.tgz",
+      ".yarn-integrity",
+      ".env*",
+      ".cache",
+      ".parcel-cache",
+      ".next",
+      ".nuxt",
+      ".vuepress/dist",
+      ".serverless/**",
+      ".fusebox/**",
+      ".dynamodb/**",
+      ".tern-port",
+      ".vscode-test",
+      ".git/**",
+      ".Spotlight-V100",
+      ".Trashes",
+      "ehthumbs.db",
+      ".vscode/**",
+      ".idea/**",
+      "*.swp",
+      "*.swo",
+      "*~"
+    ]
+  },
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineWidth": 80,
+    "lineEnding": "lf"
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "style": {
+        "useArrayLiterals": "error"
+      }
+    }
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "single",
+      "trailingCommas": "all",
+      "semicolons": "always",
+      "arrowParentheses": "asNeeded",
+      "bracketSpacing": true,
+      "bracketSameLine": true,
+      "jsxQuoteStyle": "double"
+    }
+  },
+  "json": {
+    "formatter": {
+      "trailingCommas": "all",
+      "indentStyle": "space",
+      "indentWidth": 2
+    }
+  },
+  "overrides": [
+    {
+      "includes": ["*.json5"],
+      "json": {
+        "formatter": {
+          "trailingCommas": "all",
+          "indentStyle": "space",
+          "indentWidth": 2
+        }
+      }
+    },
+    {
+      "includes": ["*.md"],
+      "formatter": {
+        "lineWidth": 100
+      }
+    }
+  ]
+}

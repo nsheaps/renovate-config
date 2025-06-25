@@ -1,0 +1,5 @@
+{
+  "extends": [
+    "github>nsheaps/renovate-config:default.json5"
+  ],
+}

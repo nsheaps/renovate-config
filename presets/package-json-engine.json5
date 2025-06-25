@@ -1,0 +1,21 @@
+{
+  description: "Update node engine in package.json if it exists",
+  customManagers: [
+    {
+      customType: "regex",
+      description: "Update node engine in package.json if it exists",
+      managerFilePatterns: ["/(^|/)package.json$/"],
+      datasourceTemplate: "node-version",
+      versioningTemplate: "node",
+      // because we don't have a capture group for it, this limits it to just node for this
+      // manager (yarn is also present in the engines block)
+      depNameTemplate: "node",
+      matchStrings: [
+        // multiline match, look for "engines" key and and treat that as a kv store
+        // (will not get any deeper than 1 level, so match until next closing brace + comma)
+        // (  ){1,2}"engines":\s*\{[^\n]*\n((    ){1,2}[^\n]*\n)*(    ){1,2}"node":\s*"(?<currentValue>[^"]+)",?\n((    ){1,2}[^\n]*\n)*(  ){1,2}\},\n
+        '(  ){1,2}"engines":\\s*\\{[^\\n]*\\n((    ){1,2}[^\\n]*\\n)*(    ){1,2}"node":\\s*"(?<currentValue>[^"]+)",?\\n((    ){1,2}[^\\n]*\\n)*(  ){1,2}\\},\\n',
+      ],
+    },
+  ],
+}

@@ -1,0 +1,129 @@
+{
+  description: "Extra groupings for dependencies",
+  packageRules: [
+    {
+      matchPackageNames: [
+        "/^react$/",
+        "/^react-dom$/",
+        "/^react-router/",
+        "/^react-query/",
+        "/^react-use$/",
+        "/^@types\\/react/",
+        "/^@types\\/react-dom/",
+        "/^@types\\/react-router/",
+      ],
+      groupName: "React dependencies",
+      groupSlug: "react",
+    },
+    {
+      matchPackageNames: ["/^redux$/", "/^@reduxjs\\//", "/redux-/", "/^@types\\/redux/"],
+      groupName: "Redux dependencies",
+      groupSlug: "redux",
+    },
+    {
+      matchPackageNames: ["/^eslint$/", "/eslint-/", "/^@types\\/eslint/"],
+      groupName: "ESLint dependencies",
+      groupSlug: "eslint",
+    },
+    {
+      matchPackageNames: ["/^jest$/", "/^jest-/", "/^@jest\\//", "/^@types\\/jest/"],
+      groupName: "Jest dependencies",
+      groupSlug: "jest",
+    },
+    {
+      matchPackageNames: ["/^electron$/", "/electron-/", "/^@types\\/electron/"],
+      groupName: "Electron dependencies",
+      groupSlug: "electron",
+    },
+    {
+      matchPackageNames: ["/^@wdio\\//", "/^@types\\/webdriverio/"],
+      groupName: "WebdriverIO dependencies",
+      groupSlug: "wdio",
+    },
+    {
+      matchPackageNames: ["/^mobx$/", "/mobx-/", "/^@types\\/mobx/"],
+      groupName: "MobX dependencies",
+      groupSlug: "mobx",
+    },
+    {
+      matchPackageNames: ["/^@radix-ui\\//"],
+      groupName: "Radix UI dependencies",
+      groupSlug: "radix-ui",
+    },
+    {
+      matchPackageNames: ["/^prisma$/", "/^@prisma\\//"],
+      groupName: "Prisma dependencies",
+      groupSlug: "prisma",
+    },
+    {
+      matchPackageNames: ["/^@codeshift\\//"],
+      groupName: "Codeshift dependencies",
+      groupSlug: "codeshift",
+    },
+    {
+      matchPackageNames: ["/^aws-sdk$/", "/^@aws-sdk\\//"],
+      groupName: "AWS SDK dependencies",
+      groupSlug: "aws-sdk",
+    },
+    {
+      matchPackageNames: ["/^@google-cloud\\//"],
+      groupName: "Google Cloud dependencies",
+      groupSlug: "google-cloud",
+    },
+    {
+      matchPackageNames: ["/^@slack\\//", "/slack-/"],
+      groupName: "Slack dependencies",
+      groupSlug: "slack",
+    },
+    {
+      matchPackageNames: ["/^storybook$/", "/^@storybook\\//"],
+      groupName: "Storybook dependencies",
+      groupSlug: "storybook",
+    },
+    {
+      matchPackageNames: ["/^playwright$/", "/^@playwright\\//"],
+      groupName: "Playwright dependencies",
+      groupSlug: "playwright",
+    },
+    {
+      matchPackageNames: ["/^lodash$/", "/^lodash-/", "/^@lodash\\//", "/^@types\\/lodash/"],
+      groupName: "Lodash dependencies",
+      groupSlug: "lodash",
+    },
+    {
+      matchPackageNames: ["/^webpack$/", "/webpack-/", "/^@types\\/webpack/"],
+      groupName: "Webpack dependencies",
+      groupSlug: "webpack",
+    },
+    {
+      matchPackageNames: ["/^dotenv$/", "/dotenv-/", "/^@types\\/dotenv/"],
+      groupName: "dotenv dependencies",
+      groupSlug: "dotenv",
+    },
+    {
+      matchPackageNames: ["/^@babel\\//", "/babel-/", "/^@types\\/babel/"],
+      groupName: "Babel dependencies",
+      groupSlug: "babel",
+    },
+    {
+      matchPackageNames: ["/^@opentelemetry\\//"],
+      groupName: "OpenTelemetry dependencies",
+      groupSlug: "opentelemetry",
+    },
+    {
+      matchPackageNames: ["/^@mui\\//"],
+      groupName: "MUI dependencies",
+      groupSlug: "mui",
+    },
+    {
+      matchPackageNames: ["/^@amplitude\\//"],
+      groupName: "Amplitude dependencies",
+      groupSlug: "amplitude",
+    },
+    {
+      matchPackageNames: ["/^jscodeshift$/", "/^@types\\/jscodeshift$/"],
+      groupName: "JSCodeshift dependencies",
+      groupSlug: "codeshift",
+    },
+  ],
+}

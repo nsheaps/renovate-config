@@ -1,0 +1,124 @@
+// Config options: https://docs.renovatebot.com/configuration-options/#dependencydashboard
+// Template fields: https://docs.renovatebot.com/templates/#other-available-fields
+// NOTE: This is a JSON5 file, which allows comments and trailing commas but JSON requires
+// double escaped backslashes in regex strings to preserve the escaping
+// If using vscode, install JSON5 extension to get syntax highlighting
+// https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+// To test changes, run:
+// export LOG_LEVEL=debug && nvm install 20 && nvm exec 20 npx --yes --package renovate -- renovate --dry-run --token $(gh auth token) --platform=local | tee renovate-log.txt
+// renovate config reference: https://docs.renovatebot.com/configuration-options/
+{
+  extends: [
+    "config:recommended",
+    ":semanticCommits",
+    // Use recommended monorepo groupings
+    // This preset groups dependencies from the same monorepo together
+    // For example, all Angular packages, all Babel packages, etc.
+    // See https://docs.renovatebot.com/presets-group/#groupmonorepos
+    "group:monorepos",
+    "github>nsheaps/renovate-config:presets/extra-groupings.json5",
+  ],
+  // set the timezone to US eastern
+  timezone: "America/New_York",
+  configMigration: true,
+
+  // Auto-merge configuration
+  // Enable auto-merging of PRs - renovate will wait for all checks to succeed, including PR reviews if required (which they are)
+  // https://docs.renovatebot.com/configuration-options/#automerge
+  automerge: true,
+  automergeType: "pr",
+  // https://docs.renovatebot.com/configuration-options/#schedule
+  automergeSchedule: "after 10am and before 4pm every weekday",
+  // Use squash merging strategy
+  automergeStrategy: "squash",
+  // npm can unpublish within 3 days
+  minimumReleaseAge: "5 days",
+  // make sure internal checks are counted towards checks prior to PR creation
+  internalChecksAsSuccess: true,
+  // Wait for checks (including stability checks) to not be pending before PR creation.
+  // PR creation creates other checks too
+  prCreation: "not-pending",
+  prNotPendingHours: 3,
+  prHourlyLimit: 3,
+  prConcurrentLimit: 8,
+
+  assigneesFromCodeOwners: true,
+
+  dependencyDashboardHeader: "This issue lists Renovate updates and detected dependencies. [Run Logs](https://developer.mend.io/github/gathertown/gather-town-v2)",
+
+  osvVulnerabilityAlerts: true,
+  dependencyDashboardOSVVulnerabilitySummary: "all",
+
+  // Despite guidance in renovate docs suggesting against it, we set rebaseWhen to "conflicted" for these specific managers
+  // because we merge so often that renovate will always try to update it before merging.
+  rebaseWhen: "conflicted",
+
+  packageRules: [
+    {
+      matchManagers: ["npm"],
+      // always update package.json versions, even if new versions satisfy
+      // the current range(s)
+      rangeStrategy: "bump",
+    },
+    {
+      matchManagers: ["github-actions"],
+      matchPackageNames: ["coana-tech/coana-action"],
+      schedule: "on the first day of the month",
+      additionalReviewers: ["rob-gather"],
+    },
+    {
+      matchManagers: ["circleci"],
+      matchUpdateTypes: ["minor", "patch"],
+      groupName: "circleci minor and patch updates",
+      enabled: true,
+    },
+    {
+      // the dockerfile manager for the node package has a different release age since the dockerfiles can be published at different times than the node packages
+      matchPackageNames: ["node"],
+      matchManagers: ["dockerfile"],
+      minimumReleaseAge: "7 days",
+    },
+    {
+      // the nvm manager for the node package has a different release age because they're typically released 1 day before the docker image is.
+      matchPackageNames: ["node"],
+      matchManagers: ["nvm", "custom.regex"],
+      minimumReleaseAge: "8 days",
+    },
+    {
+      matchCurrentAge: "> 2 years",
+      prPriority: 3,
+    },
+    {
+      matchUpdateTypes: ["major", "minor"],
+      prPriority: 4,
+    },
+    {
+      matchUpdateTypes: ["replacement"],
+      prPriority: 5,
+    },
+  ],
+  customManagers: [
+    // regex manager docs: https://docs.renovatebot.com/modules/manager/regex/
+    // To create regex for json:
+    // * create a regular expression like /my(?<match>.+)/ (note that they're always multiline!)
+    // * drop it into https://regex101.com/
+    // * in sidebar open code generator and copy the "alternative syntax". JSON5 supports ' and "
+    //   so feel free to use whichever it generates
+    {
+      customType: "regex",
+      description: "Update node engine in package.json if it exists",
+      managerFilePatterns: ["/(^|/)package.json$/"],
+      datasourceTemplate: "node-version",
+      versioningTemplate: "node",
+      // because we don't have a capture group for it, this limits it to just node for this
+      // manager (yarn is also present in the engines block)
+      depNameTemplate: "node",
+      matchStrings: [
+        // multiline match, look for "engines" key and and treat that as a kv store
+        // (will not get any deeper than 1 level, so match until next closing brace + comma)
+        // (  ){1,2}"engines":\s*\{[^\n]*\n((    ){1,2}[^\n]*\n)*(    ){1,2}"node":\s*"(?<currentValue>[^"]+)",?\n((    ){1,2}[^\n]*\n)*(  ){1,2}\},\n
+        '(  ){1,2}"engines":\\s*\\{[^\\n]*\\n((    ){1,2}[^\\n]*\\n)*(    ){1,2}"node":\\s*"(?<currentValue>[^"]+)",?\\n((    ){1,2}[^\\n]*\\n)*(  ){1,2}\\},\\n',
+      ],
+    },
+  ],
+}
