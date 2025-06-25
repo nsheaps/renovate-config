@@ -19,9 +19,10 @@ runs:
       env:
         LOG_LEVEL: debug
       run: |
-        yarn renovate --dry-run --token "${{ inputs.github-token }}" --platform=local renovate-output.txt 2>&1 | tee renovate-output.txt || EXIT_CODE=$?
+        TMP_FILE=$(mktemp)
+        yarn renovate --dry-run --token "${{ inputs.github-token }}" --platform=local 2>&1 | tee "$TMP_FILE" || EXIT_CODE=$?
         echo "renovate_output<<EOF" >> $GITHUB_OUTPUT
-        cat renovate-output.txt >> $GITHUB_OUTPUT
+        cat "$TMP_FILE" >> $GITHUB_OUTPUT
         echo "EOF" >> $GITHUB_OUTPUT
         exit $EXIT_CODE
 
