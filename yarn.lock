@@ -1302,7 +1302,7 @@ __metadata:
   resolution: "@nsheaps/renovate-config@workspace:."
   dependencies:
     "@biomejs/biome": "npm:~2.0.6"
-    renovate: "npm:~41.18.1"
+    renovate: "npm:~41.21.0"
   languageName: unknown
   linkType: soft
 
@@ -6435,12 +6435,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:3.6.1":
-  version: 3.6.1
-  resolution: "prettier@npm:3.6.1"
+"prettier@npm:3.6.2":
+  version: 3.6.2
+  resolution: "prettier@npm:3.6.2"
   bin:
     prettier: bin/prettier.cjs
-  checksum: 10c0/cf54254b9ddf1a8dff12f84bf0089e6aef3eeb9d0ce9d0344e39549ddc4f5c290fc5060d7d5a597848b9617e53e05b33a4118e37cd560f9e132ecc19c211300a
+  checksum: 10c0/488cb2f2b99ec13da1e50074912870217c11edaddedeadc649b1244c749d15ba94e846423d062e2c4c9ae683e2d65f754de28889ba06e697ac4f988d44f45812
   languageName: node
   linkType: hard
 
@@ -6720,9 +6720,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"renovate@npm:~41.18.1":
-  version: 41.18.1
-  resolution: "renovate@npm:41.18.1"
+"renovate@npm:~41.21.0":
+  version: 41.21.0
+  resolution: "renovate@npm:41.21.0"
   dependencies:
     "@aws-sdk/client-codecommit": "npm:3.840.0"
     "@aws-sdk/client-ec2": "npm:3.840.0"
@@ -6818,7 +6818,7 @@ __metadata:
     p-queue: "npm:8.1.0"
     p-throttle: "npm:7.0.0"
     parse-link-header: "npm:2.0.0"
-    prettier: "npm:3.6.1"
+    prettier: "npm:3.6.2"
     protobufjs: "npm:7.5.3"
     punycode: "npm:2.3.1"
     re2: "npm:1.22.1"
@@ -6853,7 +6853,7 @@ __metadata:
   bin:
     renovate: dist/renovate.js
     renovate-config-validator: dist/config-validator.js
-  checksum: 10c0/6f60327c394b6e12ffd754425ccd9880d6198191cc232c3a2b3c9c1a1c5cc3fea6f97b6cd07eb73226aa0bd6b8dd838a5001ba0b28848d9e3479295e215a90e5
+  checksum: 10c0/884aac4be68472f372d76283bc0c87642e29be44f20d475b716517f1bb633798eff329cc16881bda3a8def387b332f654b47bbb16a461b185435b1ff9f4b6cd0
   languageName: node
   linkType: hard
 
