@@ -1302,7 +1302,7 @@ __metadata:
   resolution: "@nsheaps/renovate-config@workspace:."
   dependencies:
     "@biomejs/biome": "npm:~2.0.6"
-    renovate: "npm:~41.21.0"
+    renovate: "npm:~41.21.1"
   languageName: unknown
   linkType: soft
 
@@ -3038,14 +3038,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"better-sqlite3@npm:12.1.1":
-  version: 12.1.1
-  resolution: "better-sqlite3@npm:12.1.1"
+"better-sqlite3@npm:12.2.0":
+  version: 12.2.0
+  resolution: "better-sqlite3@npm:12.2.0"
   dependencies:
     bindings: "npm:^1.5.0"
     node-gyp: "npm:latest"
     prebuild-install: "npm:^7.1.1"
-  checksum: 10c0/d16e6ac685f2c68f2893de458e2e839c46447d7494988bff5d800334de55b3979353e2a60fc723b4c4ab6c56ba6851b4439e7d9be71d1c6d0b110dccb030a4d8
+  checksum: 10c0/842247e9bbb775f366ac91f604117112c312497e643bac21648d8b69f479763de0ac049b14b609d6d5ecaee50debcc09a854f682d3dc099a1d933fea92ce68d0
   languageName: node
   linkType: hard
 
@@ -6720,9 +6720,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"renovate@npm:~41.21.0":
-  version: 41.21.0
-  resolution: "renovate@npm:41.21.0"
+"renovate@npm:~41.21.1":
+  version: 41.21.4
+  resolution: "renovate@npm:41.21.4"
   dependencies:
     "@aws-sdk/client-codecommit": "npm:3.840.0"
     "@aws-sdk/client-ec2": "npm:3.840.0"
@@ -6763,7 +6763,7 @@ __metadata:
     auth-header: "npm:1.0.0"
     aws4: "npm:1.13.2"
     azure-devops-node-api: "npm:15.1.0"
-    better-sqlite3: "npm:12.1.1"
+    better-sqlite3: "npm:12.2.0"
     bunyan: "npm:1.8.15"
     cacache: "npm:19.0.1"
     chalk: "npm:5.4.1"
@@ -6853,7 +6853,7 @@ __metadata:
   bin:
     renovate: dist/renovate.js
     renovate-config-validator: dist/config-validator.js
-  checksum: 10c0/884aac4be68472f372d76283bc0c87642e29be44f20d475b716517f1bb633798eff329cc16881bda3a8def387b332f654b47bbb16a461b185435b1ff9f4b6cd0
+  checksum: 10c0/074a2a1e929f9bf5bf36816e9844afb514f8bfd9a68125dffd7c3b0add12e82e44a04a53796e572b5f6a7380259612a7e4dc5198bea02b11ae045e10bf687752
   languageName: node
   linkType: hard
 
