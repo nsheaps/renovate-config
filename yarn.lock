@@ -1302,7 +1302,7 @@ __metadata:
   resolution: "@nsheaps/renovate-config@workspace:."
   dependencies:
     "@biomejs/biome": "npm:~2.0.6"
-    renovate: "npm:~41.31.1"
+    renovate: "npm:~41.32.0"
   languageName: unknown
   linkType: soft
 
@@ -1874,25 +1874,25 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@renovatebot/osv-offline-db@npm:1.7.3":
-  version: 1.7.3
-  resolution: "@renovatebot/osv-offline-db@npm:1.7.3"
+"@renovatebot/osv-offline-db@npm:1.7.4":
+  version: 1.7.4
+  resolution: "@renovatebot/osv-offline-db@npm:1.7.4"
   dependencies:
-    "@seald-io/nedb": "npm:^4.1.1"
-  checksum: 10c0/147308d56fbd8bfecf75a8140c7b9abf14f733b2d9bc33dda834848a0b977d472ff9e3f253a6e8605d078f39f4340f5745759aa16f4731ddde764cccd07b8649
+    "@seald-io/nedb": "npm:^4.1.2"
+  checksum: 10c0/8a564d064c74f4b890453c233a759322457cd2c418601ba0e238475ab70d5b19d3053ceef06ece86c66fcba6316944bde09b1aca2ee7ece8091e2e16dde086d8
   languageName: node
   linkType: hard
 
-"@renovatebot/osv-offline@npm:1.6.5":
-  version: 1.6.5
-  resolution: "@renovatebot/osv-offline@npm:1.6.5"
+"@renovatebot/osv-offline@npm:1.6.6":
+  version: 1.6.6
+  resolution: "@renovatebot/osv-offline@npm:1.6.6"
   dependencies:
-    "@renovatebot/osv-offline-db": "npm:1.7.3"
+    "@renovatebot/osv-offline-db": "npm:1.7.4"
     adm-zip: "npm:~0.5.16"
     fs-extra: "npm:^11.3.0"
     got: "npm:^11.8.6"
     luxon: "npm:^3.6.1"
-  checksum: 10c0/aaa30adc4fdf8d1bba2716c50f17e7e3c56c57b79123d4580b2a67ff3d5416ac75298300aa4b832ba01f83aec533a402e1c779f555e09ee7f9e01753d10c38f7
+  checksum: 10c0/0373b0704fd0d739c98212c0361d57c8880c5c06f9b85261939fb9928cea5a450dab064184d68c2d9225d9d1e1cdcb9917fc6aeccc36cc63b5ca26080e1bbe01
   languageName: node
   linkType: hard
 
@@ -1917,14 +1917,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@seald-io/nedb@npm:^4.1.1":
-  version: 4.1.1
-  resolution: "@seald-io/nedb@npm:4.1.1"
+"@seald-io/nedb@npm:^4.1.2":
+  version: 4.1.2
+  resolution: "@seald-io/nedb@npm:4.1.2"
   dependencies:
     "@seald-io/binary-search-tree": "npm:^1.0.3"
-    localforage: "npm:^1.9.0"
-    util: "npm:^0.12.4"
-  checksum: 10c0/048baeccbcf01f235c1f17d495a26fcb26b94ee3e9b5126cc0d278b39d5cda7e4499a66181d0b6b6473fecc0a3e8e3c2cd31a49d9f84dce05c232b045dffc477
+    localforage: "npm:^1.10.0"
+    util: "npm:^0.12.5"
+  checksum: 10c0/2507b38e74c579d159173b63d7d3ad869d6d1ab0a77ce5512f6338c4dd93659355a3e457b8406078512181066699429031a528febb298b966168a831075906a9
   languageName: node
   linkType: hard
 
@@ -3746,9 +3746,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"editorconfig@npm:3.0.0":
-  version: 3.0.0
-  resolution: "editorconfig@npm:3.0.0"
+"editorconfig@npm:3.0.1":
+  version: 3.0.1
+  resolution: "editorconfig@npm:3.0.1"
   dependencies:
     "@one-ini/wasm": "npm:0.2.0"
     commander: "npm:^14.0.0"
@@ -3756,7 +3756,7 @@ __metadata:
     semver: "npm:^7.7.2"
   bin:
     editorconfig: bin/editorconfig
-  checksum: 10c0/060b98ec1b1f56ce8816306fe7bae767be43d68e05006c1f1ffce9d2864e2a5fa705f9967bcdfac8293743737617476c99b69551f99fa43c8470c1fb5be81fac
+  checksum: 10c0/b265b0dbff36a1c67942735746c22b81d56477bb1b86014c93025873ea8460cfe64a21406742239dfdf0c65488c319d9ddb16759716ccf4a98e5911494f83cac
   languageName: node
   linkType: hard
 
@@ -5164,7 +5164,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"localforage@npm:^1.9.0":
+"localforage@npm:^1.10.0":
   version: 1.10.0
   resolution: "localforage@npm:1.10.0"
   dependencies:
@@ -6720,9 +6720,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"renovate@npm:~41.31.1":
-  version: 41.31.1
-  resolution: "renovate@npm:41.31.1"
+"renovate@npm:~41.32.0":
+  version: 41.32.3
+  resolution: "renovate@npm:41.32.3"
   dependencies:
     "@aws-sdk/client-codecommit": "npm:3.840.0"
     "@aws-sdk/client-ec2": "npm:3.840.0"
@@ -6752,7 +6752,7 @@ __metadata:
     "@qnighy/marshal": "npm:0.1.3"
     "@renovatebot/detect-tools": "npm:1.1.0"
     "@renovatebot/kbpgp": "npm:4.0.1"
-    "@renovatebot/osv-offline": "npm:1.6.5"
+    "@renovatebot/osv-offline": "npm:1.6.6"
     "@renovatebot/pep440": "npm:4.1.0"
     "@renovatebot/ruby-semver": "npm:4.0.0"
     "@sindresorhus/is": "npm:7.0.2"
@@ -6777,7 +6777,7 @@ __metadata:
     dequal: "npm:2.0.3"
     detect-indent: "npm:7.0.1"
     diff: "npm:8.0.2"
-    editorconfig: "npm:3.0.0"
+    editorconfig: "npm:3.0.1"
     email-addresses: "npm:5.0.0"
     emoji-regex: "npm:10.4.0"
     emojibase: "npm:16.0.0"
@@ -6843,7 +6843,7 @@ __metadata:
     vuln-vects: "npm:1.1.0"
     xmldoc: "npm:2.0.2"
     yaml: "npm:2.8.0"
-    zod: "npm:3.25.74"
+    zod: "npm:3.25.75"
   dependenciesMeta:
     better-sqlite3:
       optional: true
@@ -6854,7 +6854,7 @@ __metadata:
   bin:
     renovate: dist/renovate.js
     renovate-config-validator: dist/config-validator.js
-  checksum: 10c0/8138c59464b23db5be3e5310360781683a077faab3b187765fc029e6d9de5ee1426893d6a841a7d8946ecb788c44f7f5eb14606f10c0a537ae9fc89cab4de3ed
+  checksum: 10c0/5fb1ee7ed5db539847fcea2edeb127a3cdbfcff3114e4ce6d9cb8b05874e87ad9f79287ff1f754e3f313066d92af219530ea9e01afcaaa3ad4e6442a0868688c
   languageName: node
   linkType: hard
 
@@ -7849,7 +7849,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"util@npm:^0.12.4":
+"util@npm:^0.12.5":
   version: 0.12.5
   resolution: "util@npm:0.12.5"
   dependencies:
@@ -8126,10 +8126,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"zod@npm:3.25.74":
-  version: 3.25.74
-  resolution: "zod@npm:3.25.74"
-  checksum: 10c0/59e38b046ac333b5bd1ba325a83b6798721227cbfb1e69dfc7159bd7824b904241ab923026edb714fafefec3624265ae374a70aee9a5a45b365bd31781ffa105
+"zod@npm:3.25.75":
+  version: 3.25.75
+  resolution: "zod@npm:3.25.75"
+  checksum: 10c0/e11c83dcd1437401c1edf4f0448bd13b9133e83196385d0ee5407662bef6c08099cb511b5e65f11f2feba244b6709bcd34077c9450c9f3064f75df51b362b5f2
   languageName: node
   linkType: hard
 
