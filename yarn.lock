@@ -1302,7 +1302,7 @@ __metadata:
   resolution: "@nsheaps/renovate-config@workspace:."
   dependencies:
     "@biomejs/biome": "npm:~2.0.6"
-    renovate: "npm:~41.43.2"
+    renovate: "npm:~41.43.3"
   languageName: unknown
   linkType: soft
 
@@ -6727,9 +6727,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"renovate@npm:~41.43.2":
-  version: 41.43.2
-  resolution: "renovate@npm:41.43.2"
+"renovate@npm:~41.43.3":
+  version: 41.43.7
+  resolution: "renovate@npm:41.43.7"
   dependencies:
     "@aws-sdk/client-codecommit": "npm:3.840.0"
     "@aws-sdk/client-ec2": "npm:3.840.0"
@@ -6846,7 +6846,7 @@ __metadata:
     tslib: "npm:2.8.1"
     upath: "npm:2.0.1"
     url-join: "npm:5.0.0"
-    validate-npm-package-name: "npm:6.0.1"
+    validate-npm-package-name: "npm:6.0.2"
     vuln-vects: "npm:1.1.0"
     xmldoc: "npm:2.0.2"
     yaml: "npm:2.8.0"
@@ -6861,7 +6861,7 @@ __metadata:
   bin:
     renovate: dist/renovate.js
     renovate-config-validator: dist/config-validator.js
-  checksum: 10c0/c3a3587efaa8a62e8146933c99911ed36f457e3e97960194ebda2e75983222f853cc9acee74fa71fbd9a509fb815adab103fdd258a5d62295a329921099ac00c
+  checksum: 10c0/a346b1faa8fd09b66ba44e10cfa3ef1a2c3de19d606f02610548cf091b9668526e9b8f420ce597ca8e1deda8283c86b0627ffdbb1d9aa339ce2e7605b8994ef3
   languageName: node
   linkType: hard
 
@@ -7897,10 +7897,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"validate-npm-package-name@npm:6.0.1":
-  version: 6.0.1
-  resolution: "validate-npm-package-name@npm:6.0.1"
-  checksum: 10c0/4d5455523e0a0c9a9ae3f306d4e6205c43be71dac85882db1c357ebbaf685390ea94985511824cfe41c04ca302dd85eb1f0292ab6941234b5ddca38d11865f9a
+"validate-npm-package-name@npm:6.0.2":
+  version: 6.0.2
+  resolution: "validate-npm-package-name@npm:6.0.2"
+  checksum: 10c0/c4c23a8b9fa8deee11eea421d94fbe39f742146c06571b62247212579298186b724ebc5152240a415753bdaf9b8849a487e675ec2968d44660f8a65de6cdef9e
   languageName: node
   linkType: hard
 
