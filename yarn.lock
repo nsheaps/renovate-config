@@ -1303,7 +1303,7 @@ __metadata:
   resolution: "@nsheaps/renovate-config@workspace:."
   dependencies:
     "@biomejs/biome": "npm:~2.0.6"
-    renovate: "npm:~41.46.7"
+    renovate: "npm:~41.51.0"
   languageName: unknown
   linkType: soft
 
@@ -3210,7 +3210,27 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cacache@npm:19.0.1, cacache@npm:^19.0.1":
+"cacache@npm:20.0.0":
+  version: 20.0.0
+  resolution: "cacache@npm:20.0.0"
+  dependencies:
+    "@npmcli/fs": "npm:^4.0.0"
+    fs-minipass: "npm:^3.0.0"
+    glob: "npm:^11.0.3"
+    lru-cache: "npm:^11.1.0"
+    minipass: "npm:^7.0.3"
+    minipass-collect: "npm:^2.0.1"
+    minipass-flush: "npm:^1.0.5"
+    minipass-pipeline: "npm:^1.2.4"
+    p-map: "npm:^7.0.2"
+    ssri: "npm:^12.0.0"
+    tar: "npm:^7.4.3"
+    unique-filename: "npm:^4.0.0"
+  checksum: 10c0/0f42eccf529a23d8e139a79ecea37c290aab90d135b0385e245305b106f31fab529b288a188135f1d0f2436c5fdbd27b8c56043ac872a272326925fbcb3e779c
+  languageName: node
+  linkType: hard
+
+"cacache@npm:^19.0.1":
   version: 19.0.1
   resolution: "cacache@npm:19.0.1"
   dependencies:
@@ -3467,12 +3487,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cronstrue@npm:2.61.0":
-  version: 2.61.0
-  resolution: "cronstrue@npm:2.61.0"
+"cronstrue@npm:3.2.0":
+  version: 3.2.0
+  resolution: "cronstrue@npm:3.2.0"
   bin:
     cronstrue: bin/cli.js
-  checksum: 10c0/4c850b4440da9495359ad14d17e9fec06855f5b9e6871e8527a3ea7206887df944f868784f65bdf3d8ea09b99e69974429d81f88027a6774c1d08c2f5874069b
+  checksum: 10c0/4040cdd99120f8f5b4d56817104edf48521e609138ea88a1e4603842168462bb6d977ef2c931236cb1967383144df2354f4fed0712ca5b0a4e43308675fa6533
   languageName: node
   linkType: hard
 
@@ -4310,7 +4330,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"glob@npm:11.0.3":
+"glob@npm:11.0.3, glob@npm:^11.0.3":
   version: 11.0.3
   resolution: "glob@npm:11.0.3"
   dependencies:
@@ -4391,9 +4411,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"google-auth-library@npm:10.1.0":
-  version: 10.1.0
-  resolution: "google-auth-library@npm:10.1.0"
+"google-auth-library@npm:10.2.0":
+  version: 10.2.0
+  resolution: "google-auth-library@npm:10.2.0"
   dependencies:
     base64-js: "npm:^1.3.0"
     ecdsa-sig-formatter: "npm:^1.0.11"
@@ -4402,7 +4422,7 @@ __metadata:
     google-logging-utils: "npm:^1.0.0"
     gtoken: "npm:^8.0.0"
     jws: "npm:^4.0.0"
-  checksum: 10c0/5d769a1df775b2e1a7f5ddcd98da4b424db765b4404d050260628204b0cf25764aeec45f2227c50402ab10988954f09c4c86f537de1f30b1c5a476b62c4205f1
+  checksum: 10c0/144a5b139390c6d18b94e01c6c55dffcb692af82b46b8e39cf1f67b0c8b8c94dc80eed93829ae9935bf16128cd8e25440ebb4dcfc5cdfc9cfc02c0bfac6624d4
   languageName: node
   linkType: hard
 
@@ -5234,7 +5254,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lru-cache@npm:^11.0.0":
+"lru-cache@npm:^11.0.0, lru-cache@npm:^11.1.0":
   version: 11.1.0
   resolution: "lru-cache@npm:11.1.0"
   checksum: 10c0/85c312f7113f65fae6a62de7985348649937eb34fb3d212811acbf6704dc322a421788aca253b62838f1f07049a84cc513d88f494e373d3756514ad263670a64
@@ -6728,9 +6748,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"renovate@npm:~41.46.7":
-  version: 41.46.8
-  resolution: "renovate@npm:41.46.8"
+"renovate@npm:~41.51.0":
+  version: 41.51.2
+  resolution: "renovate@npm:41.51.2"
   dependencies:
     "@aws-sdk/client-codecommit": "npm:3.858.0"
     "@aws-sdk/client-ec2": "npm:3.858.0"
@@ -6773,14 +6793,14 @@ __metadata:
     azure-devops-node-api: "npm:15.1.0"
     better-sqlite3: "npm:12.2.0"
     bunyan: "npm:1.8.15"
-    cacache: "npm:19.0.1"
+    cacache: "npm:20.0.0"
     chalk: "npm:5.4.1"
     changelog-filename-regex: "npm:2.0.1"
     clean-git-ref: "npm:2.0.1"
     commander: "npm:14.0.0"
     conventional-commits-detector: "npm:1.0.3"
     croner: "npm:9.1.0"
-    cronstrue: "npm:2.61.0"
+    cronstrue: "npm:3.2.0"
     deepmerge: "npm:4.3.1"
     dequal: "npm:2.0.3"
     detect-indent: "npm:7.0.1"
@@ -6799,7 +6819,7 @@ __metadata:
     glob: "npm:11.0.3"
     global-agent: "npm:3.0.0"
     good-enough-parser: "npm:1.1.23"
-    google-auth-library: "npm:10.1.0"
+    google-auth-library: "npm:10.2.0"
     got: "npm:11.8.6"
     graph-data-structure: "npm:4.5.0"
     handlebars: "npm:4.7.8"
@@ -6862,7 +6882,7 @@ __metadata:
   bin:
     renovate: dist/renovate.js
     renovate-config-validator: dist/config-validator.js
-  checksum: 10c0/46d1a3c75e1a028d7bd1fca24826918bad55d2da0144efd9c07b48c75b6bd88229dfafd24727cf7ad65497218a46504d44b88c48f735e0afe314314db30e4ea4
+  checksum: 10c0/2bb4a6089d7b771eeee32ac0446dbe69b534c2a54cf138e5c95e2eff9fa80f696fc2a37e8afd8359dc017630f15d06bcab30fd38bfbc7284e0b8616051a43c3e
   languageName: node
   linkType: hard
 
