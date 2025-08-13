@@ -1303,7 +1303,7 @@ __metadata:
   resolution: "@nsheaps/renovate-config@workspace:."
   dependencies:
     "@biomejs/biome": "npm:~2.0.6"
-    renovate: "npm:~41.58.2"
+    renovate: "npm:~41.59.2"
   languageName: unknown
   linkType: soft
 
@@ -3008,13 +3008,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"azure-devops-node-api@npm:15.1.0":
-  version: 15.1.0
-  resolution: "azure-devops-node-api@npm:15.1.0"
+"azure-devops-node-api@npm:15.1.1":
+  version: 15.1.1
+  resolution: "azure-devops-node-api@npm:15.1.1"
   dependencies:
     tunnel: "npm:0.0.6"
     typed-rest-client: "npm:2.1.0"
-  checksum: 10c0/8f744938ac9175ee104a043c42e9eaeab55599b16bb67a72af82af17fe46e6d40e2c66698121e2b3e95ab384432db017458e570449437ab4c5c368a29c23608d
+  checksum: 10c0/e57de52745b322523c2f0220770fcbcb692032610d240644c96914ba0f08613416b701e56dc996b52c9bf6761270148a931f694630ed171b238555e237ee002c
   languageName: node
   linkType: hard
 
@@ -6748,9 +6748,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"renovate@npm:~41.58.2":
-  version: 41.58.2
-  resolution: "renovate@npm:41.58.2"
+"renovate@npm:~41.59.2":
+  version: 41.59.2
+  resolution: "renovate@npm:41.59.2"
   dependencies:
     "@aws-sdk/client-codecommit": "npm:3.858.0"
     "@aws-sdk/client-ec2": "npm:3.858.0"
@@ -6790,7 +6790,7 @@ __metadata:
     async-mutex: "npm:0.5.0"
     auth-header: "npm:1.0.0"
     aws4: "npm:1.13.2"
-    azure-devops-node-api: "npm:15.1.0"
+    azure-devops-node-api: "npm:15.1.1"
     better-sqlite3: "npm:12.2.0"
     bunyan: "npm:1.8.15"
     cacache: "npm:20.0.0"
@@ -6882,7 +6882,7 @@ __metadata:
   bin:
     renovate: dist/renovate.js
     renovate-config-validator: dist/config-validator.js
-  checksum: 10c0/1885c3a23c2bfa4bc4765d891af418aac2da4721128f0c38c129ad830425027029d9511c047e236d693e61af0209a9afdf00782b38b58f49e866ae2babf5a686
+  checksum: 10c0/4d8ea60c00e7dbe5b9c53fbbfca34b64cdcd25ce2fb4cf4d6038a082e814e6e2506d36321061f0b862c6799b33bc46cbf0c4bc41cd29591840903987a6f7aef8
   languageName: node
   linkType: hard
 
