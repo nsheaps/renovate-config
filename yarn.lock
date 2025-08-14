@@ -1303,7 +1303,7 @@ __metadata:
   resolution: "@nsheaps/renovate-config@workspace:."
   dependencies:
     "@biomejs/biome": "npm:~2.0.6"
-    renovate: "npm:~41.60.3"
+    renovate: "npm:~41.73.1"
   languageName: unknown
   linkType: soft
 
@@ -1882,39 +1882,39 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@renovatebot/osv-offline-db@npm:1.7.4":
-  version: 1.7.4
-  resolution: "@renovatebot/osv-offline-db@npm:1.7.4"
+"@renovatebot/osv-offline-db@npm:1.7.5":
+  version: 1.7.5
+  resolution: "@renovatebot/osv-offline-db@npm:1.7.5"
   dependencies:
     "@seald-io/nedb": "npm:^4.1.2"
-  checksum: 10c0/8a564d064c74f4b890453c233a759322457cd2c418601ba0e238475ab70d5b19d3053ceef06ece86c66fcba6316944bde09b1aca2ee7ece8091e2e16dde086d8
+  checksum: 10c0/e8d9e6a303cfbbb818e50f3cb9d5125eef97d36adb4bbe9851bce717c06584e73061ad65048fa197e6265770dfe689b99157e1dee3b9ce03506aa2109b116da7
   languageName: node
   linkType: hard
 
-"@renovatebot/osv-offline@npm:1.6.8":
-  version: 1.6.8
-  resolution: "@renovatebot/osv-offline@npm:1.6.8"
+"@renovatebot/osv-offline@npm:1.6.9":
+  version: 1.6.9
+  resolution: "@renovatebot/osv-offline@npm:1.6.9"
   dependencies:
-    "@renovatebot/osv-offline-db": "npm:1.7.4"
+    "@renovatebot/osv-offline-db": "npm:1.7.5"
     adm-zip: "npm:~0.5.16"
-    fs-extra: "npm:^11.3.0"
+    fs-extra: "npm:^11.3.1"
     got: "npm:^11.8.6"
     luxon: "npm:^3.7.1"
-  checksum: 10c0/4a0f8a51bf2e78b79fffacde4c8746faba3117c837baa53301c0a284741104b5c988b82ba3fea84629c76acad9654149ea0c257432c2dda0c31e87d659077b94
+  checksum: 10c0/d3953fe430a29b6bdcc496fd85929d7b9ac384987d910595f3d0e9a8e75b6e9141fea9fcfcc630ff64403e822575f4d1b1a4d5315a3b7445e05a75ea5c6a3c84
   languageName: node
   linkType: hard
 
-"@renovatebot/pep440@npm:4.1.0":
+"@renovatebot/pep440@npm:4.2.0":
+  version: 4.2.0
+  resolution: "@renovatebot/pep440@npm:4.2.0"
+  checksum: 10c0/ac04e09a9e6e8e249194e165c86b378bf12841909533c924f8a41ef071110ad8e53b6189592a535aeab23b851c3391427d9062280e41a47f885ef9defb058641
+  languageName: node
+  linkType: hard
+
+"@renovatebot/ruby-semver@npm:4.1.0":
   version: 4.1.0
-  resolution: "@renovatebot/pep440@npm:4.1.0"
-  checksum: 10c0/16fde4018f5c61a9e976481fe771b5b9e085dbebe3908d5bf60da71c68966fd195ccf220f93ff9640e484671defc8d5a1f44fdbd8c26f854f330e6a35a3c94d8
-  languageName: node
-  linkType: hard
-
-"@renovatebot/ruby-semver@npm:4.0.0":
-  version: 4.0.0
-  resolution: "@renovatebot/ruby-semver@npm:4.0.0"
-  checksum: 10c0/2cb41075578856f8688b5a977118dc5622df70116d9fcc1749613a3daf34a5b3c6cf8378845d318aff4d3397f05252892d99b46a7a9d4a6d249452919287a86d
+  resolution: "@renovatebot/ruby-semver@npm:4.1.0"
+  checksum: 10c0/ae4f0515836706ab0d4a2e29e67ff16de686745822a30e7198f0639026da5b1a6f66cff2378f315d1c0291c859ef4273126a3cd1d7d1b2d7150dcd6aa59c7b69
   languageName: node
   linkType: hard
 
@@ -3322,10 +3322,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chalk@npm:5.4.1":
-  version: 5.4.1
-  resolution: "chalk@npm:5.4.1"
-  checksum: 10c0/b23e88132c702f4855ca6d25cb5538b1114343e41472d5263ee8a37cccfccd9c4216d111e1097c6a27830407a1dc81fecdf2a56f2c63033d4dbbd88c10b0dcef
+"chalk@npm:5.5.0":
+  version: 5.5.0
+  resolution: "chalk@npm:5.5.0"
+  checksum: 10c0/23063b544f7c2fe57d25ff814807de561f8adfff72e4f0051051eaa606f772586470507ccd38d89166300eeaadb0164acde8bb8a0716a0f2d56ccdf3761d5e4f
   languageName: node
   linkType: hard
 
@@ -4147,7 +4147,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fs-extra@npm:11.3.0, fs-extra@npm:^11.2.0, fs-extra@npm:^11.3.0":
+"fs-extra@npm:11.3.0, fs-extra@npm:^11.2.0":
   version: 11.3.0
   resolution: "fs-extra@npm:11.3.0"
   dependencies:
@@ -4155,6 +4155,17 @@ __metadata:
     jsonfile: "npm:^6.0.1"
     universalify: "npm:^2.0.0"
   checksum: 10c0/5f95e996186ff45463059feb115a22fb048bdaf7e487ecee8a8646c78ed8fdca63630e3077d4c16ce677051f5e60d3355a06f3cd61f3ca43f48cc58822a44d0a
+  languageName: node
+  linkType: hard
+
+"fs-extra@npm:11.3.1, fs-extra@npm:^11.3.1":
+  version: 11.3.1
+  resolution: "fs-extra@npm:11.3.1"
+  dependencies:
+    graceful-fs: "npm:^4.2.0"
+    jsonfile: "npm:^6.0.1"
+    universalify: "npm:^2.0.0"
+  checksum: 10c0/61e5b7285b1ca72c68dfe1058b2514294a922683afac2a80aa90540f9bd85370763d675e3b408ef500077d355956fece3bd24b546790e261c3d3015967e2b2d9
   languageName: node
   linkType: hard
 
@@ -4411,9 +4422,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"google-auth-library@npm:10.2.0":
-  version: 10.2.0
-  resolution: "google-auth-library@npm:10.2.0"
+"google-auth-library@npm:10.2.1":
+  version: 10.2.1
+  resolution: "google-auth-library@npm:10.2.1"
   dependencies:
     base64-js: "npm:^1.3.0"
     ecdsa-sig-formatter: "npm:^1.0.11"
@@ -4422,7 +4433,7 @@ __metadata:
     google-logging-utils: "npm:^1.0.0"
     gtoken: "npm:^8.0.0"
     jws: "npm:^4.0.0"
-  checksum: 10c0/144a5b139390c6d18b94e01c6c55dffcb692af82b46b8e39cf1f67b0c8b8c94dc80eed93829ae9935bf16128cd8e25440ebb4dcfc5cdfc9cfc02c0bfac6624d4
+  checksum: 10c0/b64bd19bcdb0b5d461aa706d6c2d44e6e6a21ab4e3908c57d0e845db54b1a9189f95a174d2bb851c6cd13230e9ee6fe1614af6e8be219e16b1ebf285fa8a50b9
   languageName: node
   linkType: hard
 
@@ -6748,9 +6759,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"renovate@npm:~41.60.3":
-  version: 41.60.4
-  resolution: "renovate@npm:41.60.4"
+"renovate@npm:~41.73.1":
+  version: 41.73.1
+  resolution: "renovate@npm:41.73.1"
   dependencies:
     "@aws-sdk/client-codecommit": "npm:3.858.0"
     "@aws-sdk/client-ec2": "npm:3.858.0"
@@ -6780,9 +6791,9 @@ __metadata:
     "@qnighy/marshal": "npm:0.1.3"
     "@renovatebot/detect-tools": "npm:1.1.0"
     "@renovatebot/kbpgp": "npm:4.0.1"
-    "@renovatebot/osv-offline": "npm:1.6.8"
-    "@renovatebot/pep440": "npm:4.1.0"
-    "@renovatebot/ruby-semver": "npm:4.0.0"
+    "@renovatebot/osv-offline": "npm:1.6.9"
+    "@renovatebot/pep440": "npm:4.2.0"
+    "@renovatebot/ruby-semver": "npm:4.1.0"
     "@sindresorhus/is": "npm:7.0.2"
     "@yarnpkg/core": "npm:4.4.2"
     "@yarnpkg/parsers": "npm:3.0.3"
@@ -6794,7 +6805,7 @@ __metadata:
     better-sqlite3: "npm:12.2.0"
     bunyan: "npm:1.8.15"
     cacache: "npm:20.0.0"
-    chalk: "npm:5.4.1"
+    chalk: "npm:5.5.0"
     changelog-filename-regex: "npm:2.0.1"
     clean-git-ref: "npm:2.0.1"
     commander: "npm:14.0.0"
@@ -6813,13 +6824,13 @@ __metadata:
     extract-zip: "npm:2.0.1"
     find-packages: "npm:10.0.4"
     find-up: "npm:7.0.0"
-    fs-extra: "npm:11.3.0"
+    fs-extra: "npm:11.3.1"
     git-url-parse: "npm:16.1.0"
     github-url-from-git: "npm:1.5.0"
     glob: "npm:11.0.3"
     global-agent: "npm:3.0.0"
     good-enough-parser: "npm:1.1.23"
-    google-auth-library: "npm:10.2.0"
+    google-auth-library: "npm:10.2.1"
     got: "npm:11.8.6"
     graph-data-structure: "npm:4.5.0"
     handlebars: "npm:4.7.8"
@@ -6870,7 +6881,7 @@ __metadata:
     validate-npm-package-name: "npm:6.0.2"
     vuln-vects: "npm:1.1.0"
     xmldoc: "npm:2.0.2"
-    yaml: "npm:2.8.0"
+    yaml: "npm:2.8.1"
     zod: "npm:3.25.76"
   dependenciesMeta:
     better-sqlite3:
@@ -6882,7 +6893,7 @@ __metadata:
   bin:
     renovate: dist/renovate.js
     renovate-config-validator: dist/config-validator.js
-  checksum: 10c0/085b9b97d6f9cd94fdecd5a7ceb56fbe67690960511757ed741656a6ee23a64f835bb1a2b58d38b0760f526f780c267c0350ef265097e945d71a939dd6063ff4
+  checksum: 10c0/362c75ab8cdfaa8ec6d155aa6c9c8bc4f8c64f1b4bedc3c325ef823bdfbfa8e8f00a14668f6f3d023647bac773bc29604e3a08517ae3f3b25df86d53026fa67e
   languageName: node
   linkType: hard
 
@@ -8111,12 +8122,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yaml@npm:2.8.0":
-  version: 2.8.0
-  resolution: "yaml@npm:2.8.0"
+"yaml@npm:2.8.1":
+  version: 2.8.1
+  resolution: "yaml@npm:2.8.1"
   bin:
     yaml: bin.mjs
-  checksum: 10c0/f6f7310cf7264a8107e72c1376f4de37389945d2fb4656f8060eca83f01d2d703f9d1b925dd8f39852a57034fafefde6225409ddd9f22aebfda16c6141b71858
+  checksum: 10c0/7c587be00d9303d2ae1566e03bc5bc7fe978ba0d9bf39cc418c3139d37929dfcb93a230d9749f2cb578b6aa5d9ebebc322415e4b653cb83acd8bc0bc321707f3
   languageName: node
   linkType: hard
 
