@@ -1303,7 +1303,7 @@ __metadata:
   resolution: "@nsheaps/renovate-config@workspace:."
   dependencies:
     "@biomejs/biome": "npm:~2.0.6"
-    renovate: "npm:~41.73.1"
+    renovate: "npm:~41.74.2"
   languageName: unknown
   linkType: soft
 
@@ -6759,9 +6759,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"renovate@npm:~41.73.1":
-  version: 41.73.1
-  resolution: "renovate@npm:41.73.1"
+"renovate@npm:~41.74.2":
+  version: 41.74.5
+  resolution: "renovate@npm:41.74.5"
   dependencies:
     "@aws-sdk/client-codecommit": "npm:3.858.0"
     "@aws-sdk/client-ec2": "npm:3.858.0"
@@ -6873,7 +6873,7 @@ __metadata:
     simple-git: "npm:3.28.0"
     slugify: "npm:1.6.6"
     source-map-support: "npm:0.5.21"
-    strip-json-comments: "npm:5.0.2"
+    strip-json-comments: "npm:5.0.3"
     toml-eslint-parser: "npm:0.10.0"
     tslib: "npm:2.8.1"
     upath: "npm:2.0.1"
@@ -6893,7 +6893,7 @@ __metadata:
   bin:
     renovate: dist/renovate.js
     renovate-config-validator: dist/config-validator.js
-  checksum: 10c0/362c75ab8cdfaa8ec6d155aa6c9c8bc4f8c64f1b4bedc3c325ef823bdfbfa8e8f00a14668f6f3d023647bac773bc29604e3a08517ae3f3b25df86d53026fa67e
+  checksum: 10c0/7b719126c1ed93ea3fa5d0fd99d77e4a547e72643b7a00438a8bd1fac2b72c7f8e7bd66520cbc43bcf36680682b350d152a5113b2d9b17385b7ebdd053c5cc10
   languageName: node
   linkType: hard
 
@@ -7446,10 +7446,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"strip-json-comments@npm:5.0.2":
-  version: 5.0.2
-  resolution: "strip-json-comments@npm:5.0.2"
-  checksum: 10c0/e9841b8face78a01b0eb66f81e0a3419186a96f1d26817a5e1f5260b0631c10e0a7f711dddc5988edf599e5c079e4dd6e91defd21523e556636ba5679786f5ac
+"strip-json-comments@npm:5.0.3":
+  version: 5.0.3
+  resolution: "strip-json-comments@npm:5.0.3"
+  checksum: 10c0/daaf20b29f69fb51112698f4a9a662490dbb78d5baf6127c75a0a83c2ac6c078a8c0f74b389ad5e0519d6fc359c4a57cb9971b1ae201aef62ce45a13247791e0
   languageName: node
   linkType: hard
 
