@@ -1303,7 +1303,7 @@ __metadata:
   resolution: "@nsheaps/renovate-config@workspace:."
   dependencies:
     "@biomejs/biome": "npm:~2.0.6"
-    renovate: "npm:~41.82.6"
+    renovate: "npm:~41.84.0"
   languageName: unknown
   linkType: soft
 
@@ -3210,9 +3210,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cacache@npm:20.0.0":
-  version: 20.0.0
-  resolution: "cacache@npm:20.0.0"
+"cacache@npm:20.0.1":
+  version: 20.0.1
+  resolution: "cacache@npm:20.0.1"
   dependencies:
     "@npmcli/fs": "npm:^4.0.0"
     fs-minipass: "npm:^3.0.0"
@@ -3224,9 +3224,8 @@ __metadata:
     minipass-pipeline: "npm:^1.2.4"
     p-map: "npm:^7.0.2"
     ssri: "npm:^12.0.0"
-    tar: "npm:^7.4.3"
     unique-filename: "npm:^4.0.0"
-  checksum: 10c0/0f42eccf529a23d8e139a79ecea37c290aab90d135b0385e245305b106f31fab529b288a188135f1d0f2436c5fdbd27b8c56043ac872a272326925fbcb3e779c
+  checksum: 10c0/e3efcf3af1c984e6e59e03372d9289861736a572e6e05b620606b87a67e71d04cff6dbc99607801cb21bcaae1fb4fb84d4cc8e3fda725e95881329ef03dac602
   languageName: node
   linkType: hard
 
@@ -6970,9 +6969,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"renovate@npm:~41.82.6":
-  version: 41.82.10
-  resolution: "renovate@npm:41.82.10"
+"renovate@npm:~41.84.0":
+  version: 41.84.0
+  resolution: "renovate@npm:41.84.0"
   dependencies:
     "@aws-sdk/client-codecommit": "npm:3.858.0"
     "@aws-sdk/client-ec2": "npm:3.858.0"
@@ -7015,7 +7014,7 @@ __metadata:
     azure-devops-node-api: "npm:15.1.1"
     better-sqlite3: "npm:12.2.0"
     bunyan: "npm:1.8.15"
-    cacache: "npm:20.0.0"
+    cacache: "npm:20.0.1"
     chalk: "npm:5.6.0"
     changelog-filename-regex: "npm:2.0.1"
     clean-git-ref: "npm:2.0.1"
@@ -7105,7 +7104,7 @@ __metadata:
   bin:
     renovate: dist/renovate.js
     renovate-config-validator: dist/config-validator.js
-  checksum: 10c0/cdc70e11476a506f91ef3b7abd429cbca163226a2d99a91b77e07c62df7ac03d42cc403ed38e37883aa15898303b4e89af865723403b8dcde843bc71dd952ac1
+  checksum: 10c0/47a3485f7221c6e0a680e25a0723d86c490204734d14f98636b4588c1bea1907093e9ce9c80e415323e31f9d8b46f6de106b8225cba04b58c1f9fde2a5966d35
   languageName: node
   linkType: hard
 
