@@ -1303,7 +1303,7 @@ __metadata:
   resolution: "@nsheaps/renovate-config@workspace:."
   dependencies:
     "@biomejs/biome": "npm:~2.0.6"
-    renovate: "npm:~41.91.1"
+    renovate: "npm:~41.97.2"
   languageName: unknown
   linkType: soft
 
@@ -3813,10 +3813,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"emoji-regex@npm:10.4.0":
-  version: 10.4.0
-  resolution: "emoji-regex@npm:10.4.0"
-  checksum: 10c0/a3fcedfc58bfcce21a05a5f36a529d81e88d602100145fcca3dc6f795e3c8acc4fc18fe773fbf9b6d6e9371205edb3afa2668ec3473fa2aa7fd47d2a9d46482d
+"emoji-regex@npm:10.5.0":
+  version: 10.5.0
+  resolution: "emoji-regex@npm:10.5.0"
+  checksum: 10c0/17cf84335a461fc23bf90575122ace2902630dc760e53299474cd3b0b5e4cfbc6c0223a389a766817538e5d20bf0f36c67b753f27c9e705056af510b8777e312
   languageName: node
   linkType: hard
 
@@ -4452,9 +4452,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"google-auth-library@npm:10.2.1":
-  version: 10.2.1
-  resolution: "google-auth-library@npm:10.2.1"
+"google-auth-library@npm:10.3.0":
+  version: 10.3.0
+  resolution: "google-auth-library@npm:10.3.0"
   dependencies:
     base64-js: "npm:^1.3.0"
     ecdsa-sig-formatter: "npm:^1.0.11"
@@ -4463,7 +4463,7 @@ __metadata:
     google-logging-utils: "npm:^1.0.0"
     gtoken: "npm:^8.0.0"
     jws: "npm:^4.0.0"
-  checksum: 10c0/b64bd19bcdb0b5d461aa706d6c2d44e6e6a21ab4e3908c57d0e845db54b1a9189f95a174d2bb851c6cd13230e9ee6fe1614af6e8be219e16b1ebf285fa8a50b9
+  checksum: 10c0/7500ee430025bbc6435094e3147767d296d2e669bb7414b44d1771046bff4bd2de684364f8c52b47e90ab88a6ea3b55ff4202397474a40ccb85a02d06edaa652
   languageName: node
   linkType: hard
 
@@ -6385,10 +6385,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"openpgp@npm:6.2.0":
-  version: 6.2.0
-  resolution: "openpgp@npm:6.2.0"
-  checksum: 10c0/98275530f7fe22389ee21ba942db697921e3fa967c5096ec46a378b43a2ad7c50f2ed44ff2ebca4ea2c60f30090c4a050478d9a3057d28a7288422eb62ac6a44
+"openpgp@npm:6.2.1":
+  version: 6.2.1
+  resolution: "openpgp@npm:6.2.1"
+  checksum: 10c0/686d3ec3b3844687ad023453f8d64dfa76de3c13b1c92b1b5395ad5d4fa9d2dafc5c355ecaea7806229407a74d820031f76528f0a73515bc98462e69923e911e
   languageName: node
   linkType: hard
 
@@ -6993,9 +6993,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"renovate@npm:~41.91.1":
-  version: 41.91.4
-  resolution: "renovate@npm:41.91.4"
+"renovate@npm:~41.97.2":
+  version: 41.97.2
+  resolution: "renovate@npm:41.97.2"
   dependencies:
     "@aws-sdk/client-codecommit": "npm:3.879.0"
     "@aws-sdk/client-ec2": "npm:3.879.0"
@@ -7052,7 +7052,7 @@ __metadata:
     diff: "npm:8.0.2"
     editorconfig: "npm:3.0.1"
     email-addresses: "npm:5.0.0"
-    emoji-regex: "npm:10.4.0"
+    emoji-regex: "npm:10.5.0"
     emojibase: "npm:16.0.0"
     emojibase-regex: "npm:16.0.0"
     extract-zip: "npm:2.0.1"
@@ -7064,7 +7064,7 @@ __metadata:
     glob: "npm:11.0.3"
     global-agent: "npm:3.0.0"
     good-enough-parser: "npm:1.1.23"
-    google-auth-library: "npm:10.2.1"
+    google-auth-library: "npm:10.3.0"
     got: "npm:11.8.6"
     graph-data-structure: "npm:4.5.0"
     handlebars: "npm:4.7.8"
@@ -7085,7 +7085,7 @@ __metadata:
     nanoid: "npm:5.1.5"
     neotraverse: "npm:0.6.18"
     node-html-parser: "npm:7.0.1"
-    openpgp: "npm:6.2.0"
+    openpgp: "npm:6.2.1"
     p-all: "npm:5.0.0"
     p-map: "npm:7.0.3"
     p-queue: "npm:8.1.0"
@@ -7128,7 +7128,7 @@ __metadata:
   bin:
     renovate: dist/renovate.js
     renovate-config-validator: dist/config-validator.js
-  checksum: 10c0/84119a918527271b85ee1e4ac7f53e9f7e869663c29ea760144e7fc24a35fbd2b02bdea47ac9dcf76493633f32c213a09869c8c375b240677cd569f40ba2a736
+  checksum: 10c0/1acca4436cffdca95e4d2c0e4f12841c2051e6161c653365f0b67240bb95ab5a5559e7d23b78c70102edd670147f0c44c2cec66126dae020edab06b4afacb752
   languageName: node
   linkType: hard
 
