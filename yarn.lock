@@ -1303,7 +1303,7 @@ __metadata:
   resolution: "@nsheaps/renovate-config@workspace:."
   dependencies:
     "@biomejs/biome": "npm:~2.0.6"
-    renovate: "npm:~41.100.0"
+    renovate: "npm:~41.107.0"
   languageName: unknown
   linkType: soft
 
@@ -2961,6 +2961,13 @@ __metadata:
   version: 0.5.16
   resolution: "adm-zip@npm:0.5.16"
   checksum: 10c0/6f10119d4570c7ba76dcf428abb8d3f69e63f92e51f700a542b43d4c0130373dd2ddfc8f85059f12d4a843703a90c3970cfd17876844b4f3f48bf042bfa6b49f
+  languageName: node
+  linkType: hard
+
+"ae-cvss-calculator@npm:1.0.8":
+  version: 1.0.8
+  resolution: "ae-cvss-calculator@npm:1.0.8"
+  checksum: 10c0/7d00b028643715aee0ee80ef7bef16b0dff957651deb2fba29f965567208bf4a127adfe95e1fefd9b7bf7b53b887e159cc49be9aa51bfa861fe66963b41d4675
   languageName: node
   linkType: hard
 
@@ -5356,7 +5363,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"luxon@npm:3.7.1, luxon@npm:^3.7.1":
+"luxon@npm:3.7.2":
+  version: 3.7.2
+  resolution: "luxon@npm:3.7.2"
+  checksum: 10c0/ed8f0f637826c08c343a29dd478b00628be93bba6f068417b1d8896b61cb61c6deacbe1df1e057dbd9298334044afa150f9aaabbeb3181418ac8520acfdc2ae2
+  languageName: node
+  linkType: hard
+
+"luxon@npm:^3.7.1":
   version: 3.7.1
   resolution: "luxon@npm:3.7.1"
   checksum: 10c0/f83bc23a4c09da9111bc2510d2f5346e1ced4938379ebff13e308fece2ea852eb6e8b9ed8053b8d82e0fce05d5dd46e4cd64d8831ca04cfe32c0954b6f087258
@@ -7038,9 +7052,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"renovate@npm:~41.100.0":
-  version: 41.100.0
-  resolution: "renovate@npm:41.100.0"
+"renovate@npm:~41.107.0":
+  version: 41.107.2
+  resolution: "renovate@npm:41.107.2"
   dependencies:
     "@aws-sdk/client-codecommit": "npm:3.879.0"
     "@aws-sdk/client-ec2": "npm:3.879.0"
@@ -7076,6 +7090,7 @@ __metadata:
     "@sindresorhus/is": "npm:7.0.2"
     "@yarnpkg/core": "npm:4.4.3"
     "@yarnpkg/parsers": "npm:3.0.3"
+    ae-cvss-calculator: "npm:1.0.8"
     agentkeepalive: "npm:4.6.0"
     async-mutex: "npm:0.5.0"
     auth-header: "npm:1.0.0"
@@ -7121,7 +7136,7 @@ __metadata:
     jsonata: "npm:2.1.0"
     jsonc-parser: "npm:3.3.1"
     klona: "npm:2.0.6"
-    luxon: "npm:3.7.1"
+    luxon: "npm:3.7.2"
     markdown-it: "npm:14.1.0"
     markdown-table: "npm:3.0.4"
     minimatch: "npm:10.0.3"
@@ -7159,7 +7174,6 @@ __metadata:
     upath: "npm:2.0.1"
     url-join: "npm:5.0.0"
     validate-npm-package-name: "npm:6.0.2"
-    vuln-vects: "npm:1.1.0"
     xmldoc: "npm:2.0.2"
     yaml: "npm:2.8.1"
     zod: "npm:3.25.76"
@@ -7173,7 +7187,7 @@ __metadata:
   bin:
     renovate: dist/renovate.js
     renovate-config-validator: dist/config-validator.js
-  checksum: 10c0/72e66b87498dea56ed1d5625f1f2b78170270cd3cbca455ec0b3192946e34d8b3500bee38e1fc505b37a1c508a79d2b503de6e9d647dc0a8913b0a0f0aa95b1e
+  checksum: 10c0/1ebd9b6cbbd81bcd3339c33d253ed98dc58063a4fdc7ae0103f2585004b4f6facc02e2ae58f9beef005c3fcd1def49352ebfa6ae033654954453356cb51afbb4
   languageName: node
   linkType: hard
 
@@ -8233,13 +8247,6 @@ __metadata:
     "@types/unist": "npm:^3.0.0"
     vfile-message: "npm:^4.0.0"
   checksum: 10c0/e5d9eb4810623f23758cfc2205323e33552fb5972e5c2e6587babe08fe4d24859866277404fb9e2a20afb71013860d96ec806cb257536ae463c87d70022ab9ef
-  languageName: node
-  linkType: hard
-
-"vuln-vects@npm:1.1.0":
-  version: 1.1.0
-  resolution: "vuln-vects@npm:1.1.0"
-  checksum: 10c0/88c170f14d855e0cb96ba40fbd46c894751cfc526ed7de4627c8c7381c167381b373cb58afb376a7f51fb5d82725a6a0af8a4f06fc07fab7d1527c2cde2d96e5
   languageName: node
   linkType: hard
 
