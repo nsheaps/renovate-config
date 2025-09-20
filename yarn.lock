@@ -1303,7 +1303,7 @@ __metadata:
   resolution: "@nsheaps/renovate-config@workspace:."
   dependencies:
     "@biomejs/biome": "npm:~2.0.6"
-    renovate: "npm:~41.118.0"
+    renovate: "npm:~41.119.5"
   languageName: unknown
   linkType: soft
 
@@ -3486,7 +3486,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"commander@npm:14.0.0, commander@npm:^14.0.0":
+"commander@npm:14.0.1":
+  version: 14.0.1
+  resolution: "commander@npm:14.0.1"
+  checksum: 10c0/64439c0651ddd01c1d0f48c8f08e97c18a0a1fa693879451f1203ad01132af2c2aa85da24cf0d8e098ab9e6dc385a756be670d2999a3c628ec745c3ec124587b
+  languageName: node
+  linkType: hard
+
+"commander@npm:^14.0.0":
   version: 14.0.0
   resolution: "commander@npm:14.0.0"
   checksum: 10c0/73c4babfa558077868d84522b11ef56834165d472b9e86a634cd4c3ae7fc72d59af6377d8878e06bd570fe8f3161eced3cbe383c38f7093272bb65bd242b595b
@@ -7023,9 +7030,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"renovate@npm:~41.118.0":
-  version: 41.118.0
-  resolution: "renovate@npm:41.118.0"
+"renovate@npm:~41.119.5":
+  version: 41.119.5
+  resolution: "renovate@npm:41.119.5"
   dependencies:
     "@aws-sdk/client-codecommit": "npm:3.879.0"
     "@aws-sdk/client-ec2": "npm:3.879.0"
@@ -7073,7 +7080,7 @@ __metadata:
     chalk: "npm:5.6.2"
     changelog-filename-regex: "npm:2.0.1"
     clean-git-ref: "npm:2.0.1"
-    commander: "npm:14.0.0"
+    commander: "npm:14.0.1"
     conventional-commits-detector: "npm:1.0.3"
     croner: "npm:9.1.0"
     cronstrue: "npm:3.3.0"
@@ -7158,7 +7165,7 @@ __metadata:
   bin:
     renovate: dist/renovate.js
     renovate-config-validator: dist/config-validator.js
-  checksum: 10c0/8cf93d81e907122c59c4e1da4fd14660ed4bf1027f30c8db9e7838c67576eb19d8702e18254aa12ac4917a3904ac884496fe8c6240808c1d5fc614b386d80229
+  checksum: 10c0/3f39fe81be48edae4b10a74e77206cbf323b0ce146c59c6e06431077088bf4d5d57e4341264bc4836b4e83f2d0e2253e39d990c2a001da1811c0b45ea86453e5
   languageName: node
   linkType: hard
 
