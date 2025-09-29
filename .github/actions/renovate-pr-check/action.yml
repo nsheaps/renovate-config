@@ -10,7 +10,7 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - uses: qoomon/actions--context@v4
+    - uses: qoomon/actions--context@v5
       id: additional-context
 
     - name: Run Renovate
