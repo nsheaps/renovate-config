@@ -2,7 +2,7 @@
   "name": "@nsheaps/renovate-config",
   "packageManager": "yarn@4.10.3",
   "engines": {
-    "node": ">=22.19.0"
+    "node": ">=22.20.0"
   },
   "scripts": {
     "check": "yarn run check:lint && yarn run check:format",
