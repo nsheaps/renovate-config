@@ -37,7 +37,7 @@ runs:
         body-includes: "<!-- comment-slug: renovate-pr-comment -->"
 
     - name: Create or Update Comment
-      uses: peter-evans/create-or-update-comment@v4
+      uses: peter-evans/create-or-update-comment@v5
       continue-on-error: true
       with:
         comment-id: ${{ steps.fc.outputs.comment-id }}
