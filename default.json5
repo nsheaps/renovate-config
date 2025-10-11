@@ -32,7 +32,8 @@
   // Use squash merging strategy
   automergeStrategy: "squash",
   // npm can unpublish within 3 days
-  minimumReleaseAge: "5 days",
+  // 30d to account for any zero-day bugfixes
+  minimumReleaseAge: "30 days",
   // make sure internal checks are counted towards checks prior to PR creation
   internalChecksAsSuccess: true,
   // Wait for checks (including stability checks) to not be pending before PR creation.
