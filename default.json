@@ -1,0 +1,107 @@
+{
+  "extends": [
+    "config:recommended",
+    ":semanticCommits",
+    "group:monorepos",
+    "github>nsheaps/renovate-config//presets/extra-groupings.json5"
+  ],
+  "timezone": "America/New_York",
+  "configMigration": true,
+  "automerge": true,
+  "automergeType": "pr",
+  "automergeSchedule": "after 10am and before 4pm every weekday",
+  "automergeStrategy": "squash",
+  "minimumReleaseAge": "30 days",
+  "internalChecksAsSuccess": true,
+  "prCreation": "not-pending",
+  "prNotPendingHours": 3,
+  "prHourlyLimit": 3,
+  "prConcurrentLimit": 8,
+  "assigneesFromCodeOwners": true,
+  "dependencyDashboardHeader": "This issue lists Renovate updates and detected dependencies. [Run Logs](https://developer.mend.io/github/gathertown/gather-town-v2)",
+  "osvVulnerabilityAlerts": true,
+  "dependencyDashboardOSVVulnerabilitySummary": "all",
+  "rebaseWhen": "conflicted",
+  "packageRules": [
+    {
+      "matchManagers": [
+        "npm"
+      ],
+      "rangeStrategy": "bump"
+    },
+    {
+      "matchManagers": [
+        "github-actions"
+      ],
+      "matchPackageNames": [
+        "coana-tech/coana-action"
+      ],
+      "schedule": "on the first day of the month",
+      "additionalReviewers": [
+        "rob-gather"
+      ]
+    },
+    {
+      "matchManagers": [
+        "circleci"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+      "groupName": "circleci minor and patch updates",
+      "enabled": true
+    },
+    {
+      "matchPackageNames": [
+        "node"
+      ],
+      "matchManagers": [
+        "dockerfile"
+      ],
+      "minimumReleaseAge": "7 days"
+    },
+    {
+      "matchPackageNames": [
+        "node"
+      ],
+      "matchManagers": [
+        "nvm",
+        "custom.regex"
+      ],
+      "minimumReleaseAge": "8 days"
+    },
+    {
+      "matchCurrentAge": "> 2 years",
+      "prPriority": 3
+    },
+    {
+      "matchUpdateTypes": [
+        "major",
+        "minor"
+      ],
+      "prPriority": 4
+    },
+    {
+      "matchUpdateTypes": [
+        "replacement"
+      ],
+      "prPriority": 5
+    }
+  ],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "description": "Update node engine in package.json if it exists",
+      "managerFilePatterns": [
+        "/(^|/)package.json$/"
+      ],
+      "datasourceTemplate": "node-version",
+      "versioningTemplate": "node",
+      "depNameTemplate": "node",
+      "matchStrings": [
+        "(  ){1,2}\"engines\":\\s*\\{[^\\n]*\\n((    ){1,2}[^\\n]*\\n)*(    ){1,2}\"node\":\\s*\"(?<currentValue>[^\"]+)\",?\\n((    ){1,2}[^\\n]*\\n)*(  ){1,2}\\},\\n"
+      ]
+    }
+  ]
+}

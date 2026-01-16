@@ -1,0 +1,37 @@
+name: sync-json
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "default.json5"
+
+permissions:
+  contents: write
+
+jobs:
+  convert-json5-to-json:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Convert default.json5 to default.json
+        run: npx json5 default.json5 | jq '.' > default.json
+
+      - name: Check for changes
+        id: changes
+        run: |
+          if git diff --quiet default.json; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit and push
+        if: steps.changes.outputs.changed == 'true'
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: sync default.json from default.json5 [skip ci]"
+          file_pattern: default.json
