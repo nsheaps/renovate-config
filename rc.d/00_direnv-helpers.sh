@@ -44,7 +44,3 @@ watch_dir "${DIRENV_ROOT}/rc.d"
 
 # watch for changing branches to re-run direnv since direnv handles branch-change cleanup
 watch_file "${DIRENV_ROOT}/.git/HEAD"
-
-# dump the direnv stdlib to a file to make it easier to look for functionality, though the
-# file remains unused
-direnv stdlib >"${DIRENV_ROOT}/bin/lib/direnv.stdlib.sh"

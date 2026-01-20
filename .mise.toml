@@ -1,0 +1,6 @@
+[tools]
+node = "24"
+
+[settings]
+# Use shorter paths for tools
+legacy_version_file = false

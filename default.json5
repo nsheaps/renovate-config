@@ -5,7 +5,7 @@
 // If using vscode, install JSON5 extension to get syntax highlighting
 // https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
 // To test changes, run:
-// export LOG_LEVEL=debug && nvm install 20 && nvm exec 20 npx --yes --package renovate -- renovate --dry-run --token $(gh auth token) --platform=local | tee renovate-log.txt
+// export LOG_LEVEL=debug && npx --yes --package renovate -- renovate --dry-run --token $(gh auth token) --platform=local | tee renovate-log.txt
 // renovate config reference: https://docs.renovatebot.com/configuration-options/
 {
   extends: [
@@ -43,7 +43,8 @@
   prHourlyLimit: 3,
   prConcurrentLimit: 8,
 
-  assigneesFromCodeOwners: true,
+  assignees: ["nsheaps"],
+  reviewers: ["nsheaps"],
 
   dependencyDashboardHeader: "This issue lists Renovate updates and detected dependencies. [Run Logs](https://developer.mend.io/github/gathertown/gather-town-v2)",
 
@@ -80,9 +81,9 @@
       minimumReleaseAge: "7 days",
     },
     {
-      // the nvm manager for the node package has a different release age because they're typically released 1 day before the docker image is.
+      // the mise manager for the node package has a different release age because they're typically released 1 day before the docker image is.
       matchPackageNames: ["node"],
-      matchManagers: ["nvm", "custom.regex"],
+      matchManagers: ["mise", "custom.regex"],
       minimumReleaseAge: "8 days",
     },
     {

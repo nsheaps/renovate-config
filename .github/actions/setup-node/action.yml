@@ -1,13 +1,14 @@
 name: "Setup Node.js"
-description: "Setup Node.js with corepack and install dependencies"
+description: "Setup Node.js with mise, corepack, and install dependencies"
 
 runs:
   using: "composite"
   steps:
-    - name: Setup Node.js
-      uses: actions/setup-node@v6
+    - name: Setup mise
+      uses: jdx/mise-action@v2
       with:
-        node-version-file: ".nvmrc"
+        install: true
+        cache: true
 
     - name: Enable Corepack
       shell: bash
