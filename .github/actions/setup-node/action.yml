@@ -12,7 +12,11 @@ runs:
 
     - name: Enable Corepack
       shell: bash
-      run: corepack enable && corepack install
+      run: |
+        corepack enable
+        corepack install
+        # Regenerate shims so mise picks up the corepack-managed yarn
+        mise reshim
 
     - name: Install dependencies
       shell: bash
