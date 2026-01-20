@@ -17,7 +17,12 @@
   "prNotPendingHours": 3,
   "prHourlyLimit": 3,
   "prConcurrentLimit": 8,
-  "assigneesFromCodeOwners": true,
+  "assignees": [
+    "nsheaps"
+  ],
+  "reviewers": [
+    "nsheaps"
+  ],
   "dependencyDashboardHeader": "This issue lists Renovate updates and detected dependencies. [Run Logs](https://developer.mend.io/github/gathertown/gather-town-v2)",
   "osvVulnerabilityAlerts": true,
   "dependencyDashboardOSVVulnerabilitySummary": "all",
@@ -66,7 +71,7 @@
         "node"
       ],
       "matchManagers": [
-        "nvm",
+        "mise",
         "custom.regex"
       ],
       "minimumReleaseAge": "8 days"
