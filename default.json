@@ -17,63 +17,37 @@
   "prNotPendingHours": 3,
   "prHourlyLimit": 3,
   "prConcurrentLimit": 8,
-  "assignees": [
-    "nsheaps"
-  ],
-  "reviewers": [
-    "nsheaps"
-  ],
+  "assignees": ["nsheaps"],
+  "reviewers": ["nsheaps"],
   "dependencyDashboardHeader": "This issue lists Renovate updates and detected dependencies. [Run Logs](https://developer.mend.io/github/gathertown/gather-town-v2)",
   "osvVulnerabilityAlerts": true,
   "dependencyDashboardOSVVulnerabilitySummary": "all",
   "rebaseWhen": "conflicted",
   "packageRules": [
     {
-      "matchManagers": [
-        "npm"
-      ],
+      "matchManagers": ["npm"],
       "rangeStrategy": "bump"
     },
     {
-      "matchManagers": [
-        "github-actions"
-      ],
-      "matchPackageNames": [
-        "coana-tech/coana-action"
-      ],
+      "matchManagers": ["github-actions"],
+      "matchPackageNames": ["coana-tech/coana-action"],
       "schedule": "on the first day of the month",
-      "additionalReviewers": [
-        "rob-gather"
-      ]
+      "additionalReviewers": ["rob-gather"]
     },
     {
-      "matchManagers": [
-        "circleci"
-      ],
-      "matchUpdateTypes": [
-        "minor",
-        "patch"
-      ],
+      "matchManagers": ["circleci"],
+      "matchUpdateTypes": ["minor", "patch"],
       "groupName": "circleci minor and patch updates",
       "enabled": true
     },
     {
-      "matchPackageNames": [
-        "node"
-      ],
-      "matchManagers": [
-        "dockerfile"
-      ],
+      "matchPackageNames": ["node"],
+      "matchManagers": ["dockerfile"],
       "minimumReleaseAge": "7 days"
     },
     {
-      "matchPackageNames": [
-        "node"
-      ],
-      "matchManagers": [
-        "mise",
-        "custom.regex"
-      ],
+      "matchPackageNames": ["node"],
+      "matchManagers": ["mise", "custom.regex"],
       "minimumReleaseAge": "8 days"
     },
     {
@@ -81,16 +55,11 @@
       "prPriority": 3
     },
     {
-      "matchUpdateTypes": [
-        "major",
-        "minor"
-      ],
+      "matchUpdateTypes": ["major", "minor"],
       "prPriority": 4
     },
     {
-      "matchUpdateTypes": [
-        "replacement"
-      ],
+      "matchUpdateTypes": ["replacement"],
       "prPriority": 5
     }
   ],
@@ -98,9 +67,7 @@
     {
       "customType": "regex",
       "description": "Update node engine in package.json if it exists",
-      "managerFilePatterns": [
-        "/(^|/)package.json$/"
-      ],
+      "managerFilePatterns": ["/(^|/)package.json$/"],
       "datasourceTemplate": "node-version",
       "versioningTemplate": "node",
       "depNameTemplate": "node",

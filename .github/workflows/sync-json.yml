@@ -16,9 +16,13 @@ jobs:
 
     steps:
       - uses: actions/checkout@v5
+      - uses: ./.github/actions/setup-node
 
       - name: Convert default.json5 to default.json
-        run: npx json5 default.json5 | jq '.' > default.json
+        run: |
+          npx json5 default.json5 | jq '.' > default.json
+          # Format with biome to match project style (compact single-element arrays)
+          yarn biome format --write --vcs-enabled=false default.json
 
       - name: Check for changes
         id: changes
