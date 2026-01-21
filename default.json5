@@ -17,6 +17,7 @@
     // See https://docs.renovatebot.com/presets-group/#groupmonorepos
     "group:monorepos",
     "github>nsheaps/renovate-config//presets/extra-groupings.json5",
+    "github>nsheaps/renovate-config//presets/gha-digest-automerge.json5",
   ],
   // set the timezone to US eastern
   timezone: "America/New_York",

@@ -1,0 +1,13 @@
+{
+  description: "GitHub Actions digest pinning updates use platform automerge with squash",
+  packageRules: [
+    {
+      // GitHub Actions digest updates are low-risk - they're pinning to a specific
+      // commit hash of an already-released version, so platformAutomerge is safe
+      matchManagers: ["github-actions"],
+      matchUpdateTypes: ["digest"],
+      platformAutomerge: true,
+      automergeStrategy: "squash",
+    },
+  ],
+}
