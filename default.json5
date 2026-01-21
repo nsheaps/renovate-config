@@ -18,6 +18,11 @@
     "group:monorepos",
     "github>nsheaps/renovate-config//presets/extra-groupings.json5",
     "github>nsheaps/renovate-config//presets/gha-digest-automerge.json5",
+    "github>nsheaps/renovate-config//presets/gha-pin-digests.json5",
+    "github>nsheaps/renovate-config//presets/container-pin-digests.json5",
+    "github>nsheaps/renovate-config//presets/group-patch-updates.json5",
+    "github>nsheaps/renovate-config//presets/group-gha-updates.json5",
+    "github>nsheaps/renovate-config//presets/nsheaps-zero-release-age.json5",
   ],
   // set the timezone to US eastern
   timezone: "America/New_York",

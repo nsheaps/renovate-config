@@ -1,0 +1,11 @@
+{
+  description: "Group all GitHub Actions updates together (except digest updates)",
+  packageRules: [
+    {
+      matchManagers: ["github-actions"],
+      matchUpdateTypes: ["major", "minor", "patch"],
+      groupName: "GitHub Actions",
+      groupSlug: "github-actions",
+    },
+  ],
+}

@@ -1,0 +1,9 @@
+{
+  description: "Always pin GitHub Actions to digests for security and reproducibility",
+  packageRules: [
+    {
+      matchManagers: ["github-actions"],
+      pinDigests: true,
+    },
+  ],
+}

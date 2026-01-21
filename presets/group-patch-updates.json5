@@ -1,0 +1,10 @@
+{
+  description: "Group all patch updates together across all package managers",
+  packageRules: [
+    {
+      matchUpdateTypes: ["patch"],
+      groupName: "all patch updates",
+      groupSlug: "all-patch",
+    },
+  ],
+}

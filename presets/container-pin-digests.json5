@@ -1,0 +1,9 @@
+{
+  description: "Always pin container/Docker image references to digests for reproducibility",
+  packageRules: [
+    {
+      matchManagers: ["dockerfile", "docker-compose", "kubernetes", "helm-values"],
+      pinDigests: true,
+    },
+  ],
+}

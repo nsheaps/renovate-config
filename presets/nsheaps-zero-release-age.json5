@@ -1,0 +1,9 @@
+{
+  description: "nsheaps packages have zero minimum release age (trusted source)",
+  packageRules: [
+    {
+      matchPackageNames: ["nsheaps/{/,}**"],
+      minimumReleaseAge: "0 days",
+    },
+  ],
+}
