@@ -1372,7 +1372,7 @@ __metadata:
   resolution: "@nsheaps/renovate-config@workspace:."
   dependencies:
     "@biomejs/biome": "npm:~2.0.6"
-    renovate: "npm:~43.4.2"
+    renovate: "npm:~43.5.4"
   languageName: unknown
   linkType: soft
 
@@ -2027,10 +2027,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@renovatebot/pgp@npm:1.2.4":
-  version: 1.2.4
-  resolution: "@renovatebot/pgp@npm:1.2.4"
-  checksum: 10c0/3cbf07b9e73d66a0fb49b4dbecad97db845090b0f22049898b691a765246e72a714c99eba33c37621f7ae9f1b2a296a1d926001e8d284b031f7d5e9d5323d9b5
+"@renovatebot/pgp@npm:1.3.0":
+  version: 1.3.0
+  resolution: "@renovatebot/pgp@npm:1.3.0"
+  checksum: 10c0/c9a8803ea9496b84a91572e07ed7eaa3d7f7c558c4d14d00ec86ff71a103b797312b88d3d9eb5f4d43c87466f222cbfe4d1261cc1cb323186647a1417550c199
   languageName: node
   linkType: hard
 
@@ -7488,9 +7488,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"renovate@npm:~43.4.2":
-  version: 43.4.5
-  resolution: "renovate@npm:43.4.5"
+"renovate@npm:~43.5.4":
+  version: 43.5.6
+  resolution: "renovate@npm:43.5.6"
   dependencies:
     "@aws-sdk/client-codecommit": "npm:3.980.0"
     "@aws-sdk/client-ec2": "npm:3.980.0"
@@ -7523,7 +7523,7 @@ __metadata:
     "@renovatebot/good-enough-parser": "npm:1.2.0"
     "@renovatebot/osv-offline": "npm:2.0.1"
     "@renovatebot/pep440": "npm:4.2.1"
-    "@renovatebot/pgp": "npm:1.2.4"
+    "@renovatebot/pgp": "npm:1.3.0"
     "@renovatebot/ruby-semver": "npm:4.1.2"
     "@sindresorhus/is": "npm:7.2.0"
     "@yarnpkg/core": "npm:4.5.0"
@@ -7623,7 +7623,7 @@ __metadata:
   bin:
     renovate: dist/renovate.js
     renovate-config-validator: dist/config-validator.js
-  checksum: 10c0/f94a465adde6c6a805894a32b847fdc0a186731c6ba09b03bc856d35bf4210d52f397fa08ff5f3a2866110ad56f3bcb922057eba31f3c9933c571d12a6bf7004
+  checksum: 10c0/fb813a099b42c3c3bd984e8b27efe2567caa6a6e52344a4dadd1ed06ee8a43e687591c2d4e9122988c732031d815db23d2c05827f413a80599bd32f26360321c
   languageName: node
   linkType: hard
 
