@@ -10,7 +10,7 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - uses: qoomon/actions--context@v5
+    - uses: qoomon/actions--context@e12e182be797e3476990faf801dd1b87f107f91c # v5
       id: additional-context
 
     - name: Run Renovate
@@ -28,7 +28,7 @@ runs:
         exit $EXIT_CODE
 
     - name: Find Comment
-      uses: peter-evans/find-comment@v4
+      uses: peter-evans/find-comment@b30e6a3c0ed37e7c023ccd3f1db5c6c0b0c23aad # v4
       id: fc
       continue-on-error: true
       with:
@@ -37,7 +37,7 @@ runs:
         body-includes: "<!-- comment-slug: renovate-pr-comment -->"
 
     - name: Create or Update Comment
-      uses: peter-evans/create-or-update-comment@v5
+      uses: peter-evans/create-or-update-comment@e8674b075228eee787fea43ef493e45ece1004c9 # v5
       continue-on-error: true
       with:
         comment-id: ${{ steps.fc.outputs.comment-id }}
