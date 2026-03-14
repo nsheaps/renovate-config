@@ -1372,7 +1372,7 @@ __metadata:
   resolution: "@nsheaps/renovate-config@workspace:."
   dependencies:
     "@biomejs/biome": "npm:~2.0.6"
-    renovate: "npm:~43.8.1"
+    renovate: "npm:~43.8.5"
   languageName: unknown
   linkType: soft
 
@@ -7497,7 +7497,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"renovate@npm:~43.8.1":
+"renovate@npm:~43.8.5":
   version: 43.8.5
   resolution: "renovate@npm:43.8.5"
   dependencies:
