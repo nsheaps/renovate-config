@@ -33,7 +33,8 @@ if_debug export DIRENV_LOG_FORMAT=$'\033[2mdirenv: %s\033[0m'
 # MANPATH must be defined, else direnv might run `man -w` which on some platforms may return "Which manual page do you want?"
 if [[ -z "${MANPATH:-}" ]]; then
   if command -v manpath &>/dev/null; then
-    export MANPATH="$(manpath)"
+    MANPATH="$(manpath)"
+    export MANPATH
   else
     export MANPATH=""
   fi

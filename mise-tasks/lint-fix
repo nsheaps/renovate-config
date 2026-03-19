@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# mise description="Fix lint/format issues"
+set +e
+
+yarn biome check --write .
+bin/lint-shell --fix

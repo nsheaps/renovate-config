@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# mise description="Check for lint/format issues without fixing"
+set -euo pipefail
+
+FAILED=false
+yarn biome check . || FAILED=true
+bin/lint-shell || FAILED=true
+[[ "$FAILED" == "false" ]]

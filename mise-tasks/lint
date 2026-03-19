@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# mise description="Run linters - auto-fix if issues found, CI handles detecting/committing changes"
+set -euo pipefail
+
+if mise run lint-check; then
+    exit 0
+fi
+
+echo "Lint errors found. Attempting to fix..."
+mise run lint-fix
+# Exit based on whether issues remain
+mise run lint-check
