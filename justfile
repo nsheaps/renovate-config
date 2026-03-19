@@ -1,7 +1,7 @@
 # Renovate Config - Local Development Commands
 #
 # Prerequisites:
-#   - just: https://github.com/casey/just
+#   - just: https://github.com/caesar/just
 #   - mise: https://mise.run
 #
 # Usage:
@@ -17,11 +17,17 @@ default:
 
 # Check for lint/format issues without fixing
 lint-check:
-    yarn biome check .
+    #!/usr/bin/env bash
+    FAILED=false
+    yarn biome check . || FAILED=true
+    bin/lint-shell || FAILED=true
+    [[ "$FAILED" == "false" ]]
 
 # Fix lint/format issues
 lint-fix:
+    #!/usr/bin/env bash
     yarn biome check --write .
+    bin/lint-shell --fix
 
 # Run linters - auto-fix if issues found, CI handles detecting/committing changes
 lint:
