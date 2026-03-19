@@ -20,11 +20,42 @@ permissions:
 jobs:
   lint-and-format:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
-      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
+      - name: Checkout and authenticate as GitHub App
+        id: auth
+        uses: nsheaps/github-actions/.github/actions/checkout-as-app@603052841cd49b9fdc99bc32979ff9c45c9b669e # checkout-as-app@main
+        with:
+          app-id: ${{ secrets.AUTOMATION_GITHUB_APP_ID }}
+          private-key: ${{ secrets.AUTOMATION_GITHUB_APP_PRIVATE_KEY }}
+          ref: ${{ github.head_ref || github.ref }}
+
       - uses: ./.github/actions/setup-node
-      - run: yarn check
+
+      - name: just lint
+        id: lint
+        uses: ./.github/actions/lint-files
+        with:
+          fix: 'true'
+        continue-on-error: true
+
+      - name: git push
+        if: steps.lint.outputs.changed-or-failed == 'true' && ! cancelled()
+        id: auto-commit-action
+        uses: stefanzweifel/git-auto-commit-action@04702edda442b2e678b25b537cec683a1493fcb9 # v7
+        with:
+          commit_message: 'chore: `just lint`'
+          commit_user_name: ${{ steps.auth.outputs.user-name }}
+          commit_user_email: ${{ steps.auth.outputs.user-email }}
+
+      - name: 'exit 1 # changes detected or linting failed'
+        if: ${{ steps.lint.outputs.changed-or-failed == 'true' && ! cancelled() }}
+        run: |
+          echo "Changes made or lint failed! Auto-committed the fixes, but more lint and format issues may remain."
+          exit 1
+
   renovate:
     runs-on: ubuntu-latest
     if: github.event_name == 'pull_request'
