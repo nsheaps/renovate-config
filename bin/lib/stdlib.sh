@@ -143,7 +143,8 @@ spinner() {
   #   spinner "Waiting for a long running task to finish" || fatal "The long running task failed"
   local message="$1"
   local pid=$!
-  local start_time="$(date +%s)"
+  local start_time
+  start_time="$(date +%s)"
   local delay=0.2
   # shellcheck disable=SC1003 # Why: Not escaping a squote.
   local spinstr='|/-\'
@@ -166,7 +167,8 @@ spinner() {
   local exit_code=$?
   # clear the line if the terminal is interactive
   [[ -t 0 ]] && printf "\r%-${COLUMNS}s\r" " "
-  local end_time="$(date +%s)"
+  local end_time
+  end_time="$(date +%s)"
   local seconds=$((end_time - start_time))
   # reprint the message without the spinner but with the time it took
   echo -e "$message" "${ANSI_GREY}($seconds seconds)${ANSI_RESET}"
