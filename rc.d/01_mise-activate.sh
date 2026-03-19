@@ -11,22 +11,22 @@ cd "${DIRENV_ROOT}"
 
 # activate mise environment
 # check to see that mise is installed.
-if command -v mise &> /dev/null; then
+if command -v mise &>/dev/null; then
 
-    # if not installed via a package manager, having an out of date
-    # version of mise can result in strange errors when installing node due to gpg
-    # signing, so we'll just eat the error
-    mise self-update >/dev/null 2>&1 || true
-    mise trust --quiet
-    mise install -y
+  # if not installed via a package manager, having an out of date
+  # version of mise can result in strange errors when installing node due to gpg
+  # signing, so we'll just eat the error
+  mise self-update >/dev/null 2>&1 || true
+  mise trust --quiet
+  mise install -y
 
-    # activate mise in the current shell
-    eval "$(mise activate bash)"
+  # activate mise in the current shell
+  eval "$(mise activate bash)"
 else
-    # mise is not installed, error and exit
-    echo "Error: mise is not installed. Please install mise to proceed."
-    echo "   see : https://mise.jdx.dev/cli/install.html"
-    exit 1
+  # mise is not installed, error and exit
+  echo "Error: mise is not installed. Please install mise to proceed."
+  echo "   see : https://mise.jdx.dev/cli/install.html"
+  exit 1
 fi
 
 # enable and install corepack for yarn
