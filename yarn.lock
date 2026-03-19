@@ -1372,7 +1372,7 @@ __metadata:
   resolution: "@nsheaps/renovate-config@workspace:."
   dependencies:
     "@biomejs/biome": "npm:~2.0.6"
-    renovate: "npm:~43.15.1"
+    renovate: "npm:~43.19.2"
   languageName: unknown
   linkType: soft
 
@@ -3925,12 +3925,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cronstrue@npm:3.11.0":
-  version: 3.11.0
-  resolution: "cronstrue@npm:3.11.0"
+"cronstrue@npm:3.12.0":
+  version: 3.12.0
+  resolution: "cronstrue@npm:3.12.0"
   bin:
     cronstrue: bin/cli.js
-  checksum: 10c0/16ecc85750b55df41f16e0f2f10bef81f8954bbcdfc31912e66e2f46cdb0e33c059a7645e9d01080a3f0739d9d88a2a93cb86811597adc07b44255bc94bf118c
+  checksum: 10c0/f42009ac3e4d8b1190bc5cafcddba652ac9444cc60fb5ea6c0f02ad8ad825ec4644dca803c1931a82610154649ec95bbfa46186782760c9304df985b36b512d7
   languageName: node
   linkType: hard
 
@@ -4266,17 +4266,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"emojibase-regex@npm:16.0.0":
-  version: 16.0.0
-  resolution: "emojibase-regex@npm:16.0.0"
-  checksum: 10c0/8ee5ff798e51caa581434b1cb2f9737e50195093c4efa1739df21a50a5496f80517924787d865e8cf7d6a0b4c90dbedc04bdc506dcbcc582e14cdf0bb47af0f0
+"emojibase-regex@npm:17.0.0":
+  version: 17.0.0
+  resolution: "emojibase-regex@npm:17.0.0"
+  checksum: 10c0/c6fc5d16303f3f25d48c58105f8658d5f348a7cdfdeb0ba4785ebe14d3149ef808fc848aaa764fcc6abdd30bad1a70bcfb49eadd51e4009396bbf5942e716a3e
   languageName: node
   linkType: hard
 
-"emojibase@npm:16.0.0":
-  version: 16.0.0
-  resolution: "emojibase@npm:16.0.0"
-  checksum: 10c0/ec49ca2e131d349fa1f1dbe6ee8a6bf12da6225ce2de99d488e67a3cb80ac282f27aa480f0a7062c0c069c24508684ba524418be56b475cbd937877663686c47
+"emojibase@npm:17.0.0":
+  version: 17.0.0
+  resolution: "emojibase@npm:17.0.0"
+  checksum: 10c0/d37435b77f12e3c45d06fc09753fd7dd6b44e757cfaa96b64b72257109aa8166773e19c1eb18c21a06e5b8c50462cb279dca83510724673f505a6f0d6e7dc90f
   languageName: node
   linkType: hard
 
@@ -6680,12 +6680,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nan@npm:^2.24.0":
-  version: 2.25.0
-  resolution: "nan@npm:2.25.0"
+"nan@npm:^2.25.0":
+  version: 2.26.2
+  resolution: "nan@npm:2.26.2"
   dependencies:
     node-gyp: "npm:latest"
-  checksum: 10c0/add28b255a880f705f937b6276550ebc09274e8ea9d0e8f598f286c817aedfba22223844297840e597a478d7264537294f8c1eda0eb33a228b7aee57ecf52d45
+  checksum: 10c0/ff204c964729279cf3abb8b170c77753ed36092e2235f11bfb0204dfd3e8cc2d5a3bcfdfd3b677f06a0743d7f835d873dce59f23a2dbf6fb671d9351cc655d73
   languageName: node
   linkType: hard
 
@@ -6767,7 +6767,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-gyp@npm:^12.1.0":
+"node-gyp@npm:^12.2.0":
   version: 12.2.0
   resolution: "node-gyp@npm:12.2.0"
   dependencies:
@@ -7341,14 +7341,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"re2@npm:1.23.2":
-  version: 1.23.2
-  resolution: "re2@npm:1.23.2"
+"re2@npm:1.23.3":
+  version: 1.23.3
+  resolution: "re2@npm:1.23.3"
   dependencies:
     install-artifact-from-github: "npm:^1.4.0"
-    nan: "npm:^2.24.0"
-    node-gyp: "npm:^12.1.0"
-  checksum: 10c0/93caa337b9447751515f91550cf770f2b13de687db626197b8849396272bda90d2e76d080314a33986c492004beea417bcea3ab442febdbd0a14aa9b4a936509
+    nan: "npm:^2.25.0"
+    node-gyp: "npm:^12.2.0"
+  checksum: 10c0/32da4744878fff18e9e8589baf8aae33375b17573e75e2b3a8f4173edeb22483991182b7a2cc7b1cce242fbfd3d3336de79047c6c6b5ab4689dcf5e41ea7a549
   languageName: node
   linkType: hard
 
@@ -7497,9 +7497,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"renovate@npm:~43.15.1":
-  version: 43.15.3
-  resolution: "renovate@npm:43.15.3"
+"renovate@npm:~43.19.2":
+  version: 43.19.2
+  resolution: "renovate@npm:43.19.2"
   dependencies:
     "@aws-sdk/client-codecommit": "npm:3.980.0"
     "@aws-sdk/client-ec2": "npm:3.980.0"
@@ -7551,7 +7551,7 @@ __metadata:
     commander: "npm:14.0.3"
     conventional-commits-detector: "npm:1.0.3"
     croner: "npm:9.1.0"
-    cronstrue: "npm:3.11.0"
+    cronstrue: "npm:3.12.0"
     deepmerge: "npm:4.3.1"
     dequal: "npm:2.0.3"
     detect-indent: "npm:7.0.2"
@@ -7559,8 +7559,8 @@ __metadata:
     editorconfig: "npm:3.0.1"
     email-addresses: "npm:5.0.0"
     emoji-regex: "npm:10.6.0"
-    emojibase: "npm:16.0.0"
-    emojibase-regex: "npm:16.0.0"
+    emojibase: "npm:17.0.0"
+    emojibase-regex: "npm:17.0.0"
     execa: "npm:8.0.1"
     extract-zip: "npm:2.0.1"
     find-packages: "npm:10.0.4"
@@ -7599,7 +7599,7 @@ __metadata:
     prettier: "npm:3.6.2"
     protobufjs: "npm:8.0.0"
     punycode: "npm:2.3.1"
-    re2: "npm:1.23.2"
+    re2: "npm:1.23.3"
     redis: "npm:5.10.0"
     remark: "npm:15.0.1"
     remark-gfm: "npm:4.0.1"
@@ -7632,7 +7632,7 @@ __metadata:
   bin:
     renovate: dist/renovate.js
     renovate-config-validator: dist/config-validator.js
-  checksum: 10c0/ccb4cf750998dec60b4c8d9bc590212f4817faed7cadb02561c752319e55c3aa28902874f6cea3ec940b03612a17a9025437210bb0f8dc585de0f1bf1db7b061
+  checksum: 10c0/cc09ad5627ed0ecf638e4ad45cecfd3c7e231d7b3246946ed5399b44ce2ad3c901772b4081598432277ed92e4712ea1bec5bb8f4e670d2f427a21101e8e748d8
   languageName: node
   linkType: hard
 
