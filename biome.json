@@ -94,7 +94,7 @@
   },
   "json": {
     "formatter": {
-      "trailingCommas": "all",
+      "trailingCommas": "none",
       "indentStyle": "space",
       "indentWidth": 2
     }
