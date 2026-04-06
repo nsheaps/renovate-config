@@ -1501,14 +1501,14 @@ __metadata:
   resolution: "@nsheaps/renovate-config@workspace:."
   dependencies:
     "@biomejs/biome": "npm:~2.4.6"
-    renovate: "npm:~43.58.0"
+    renovate: "npm:~43.59.2"
   languageName: unknown
   linkType: soft
 
-"@one-ini/wasm@npm:0.2.0":
-  version: 0.2.0
-  resolution: "@one-ini/wasm@npm:0.2.0"
-  checksum: 10c0/be3b8693230a4bd4c88bbf4679bcd5c9d9e4a26816dec2cf581453ce45aeaa6011fc310a056562549a1e1eb4f5a4b169aec9b6ae3636b8659a0b39049f07b672
+"@one-ini/wasm@npm:0.2.1":
+  version: 0.2.1
+  resolution: "@one-ini/wasm@npm:0.2.1"
+  checksum: 10c0/6bc49c43b757bc53786f655845b3af0676348ca910d07d1adb1b56e174faf9149fb3453f3e3fed02b3de4c400367e597cb58b6b7d3590a52289e97faf99fc37f
   languageName: node
   linkType: hard
 
@@ -4208,17 +4208,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"commander@npm:14.0.3":
+"commander@npm:14.0.3, commander@npm:^14.0.3":
   version: 14.0.3
   resolution: "commander@npm:14.0.3"
   checksum: 10c0/755652564bbf56ff2ff083313912b326450d3f8d8c85f4b71416539c9a05c3c67dbd206821ca72635bf6b160e2afdefcb458e86b317827d5cb333b69ce7f1a24
-  languageName: node
-  linkType: hard
-
-"commander@npm:^14.0.0":
-  version: 14.0.0
-  resolution: "commander@npm:14.0.0"
-  checksum: 10c0/73c4babfa558077868d84522b11ef56834165d472b9e86a634cd4c3ae7fc72d59af6377d8878e06bd570fe8f3161eced3cbe383c38f7093272bb65bd242b595b
   languageName: node
   linkType: hard
 
@@ -4572,17 +4565,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"editorconfig@npm:3.0.1":
-  version: 3.0.1
-  resolution: "editorconfig@npm:3.0.1"
+"editorconfig@npm:3.0.2":
+  version: 3.0.2
+  resolution: "editorconfig@npm:3.0.2"
   dependencies:
-    "@one-ini/wasm": "npm:0.2.0"
-    commander: "npm:^14.0.0"
-    minimatch: "npm:10.0.1"
-    semver: "npm:^7.7.2"
+    "@one-ini/wasm": "npm:0.2.1"
+    commander: "npm:^14.0.3"
+    minimatch: "npm:~10.2.4"
+    semver: "npm:^7.7.4"
   bin:
     editorconfig: bin/editorconfig
-  checksum: 10c0/b265b0dbff36a1c67942735746c22b81d56477bb1b86014c93025873ea8460cfe64a21406742239dfdf0c65488c319d9ddb16759716ccf4a98e5911494f83cac
+  checksum: 10c0/22b4594adc4e5832c88c0926adb1dcd289351edb9c2b0bd68ecf56ad107bf3741ab407aa44999e503889d62e38519d42ca38aae183e4ffc0b5fd94cebdd73d08
   languageName: node
   linkType: hard
 
@@ -6838,15 +6831,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"minimatch@npm:10.0.1":
-  version: 10.0.1
-  resolution: "minimatch@npm:10.0.1"
-  dependencies:
-    brace-expansion: "npm:^2.0.1"
-  checksum: 10c0/e6c29a81fe83e1877ad51348306be2e8aeca18c88fdee7a99df44322314279e15799e41d7cb274e4e8bb0b451a3bc622d6182e157dfa1717d6cda75e9cd8cd5d
-  languageName: node
-  linkType: hard
-
 "minimatch@npm:10.2.4":
   version: 10.2.4
   resolution: "minimatch@npm:10.2.4"
@@ -6874,7 +6858,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"minimatch@npm:^10.2.2":
+"minimatch@npm:^10.2.2, minimatch@npm:~10.2.4":
   version: 10.2.5
   resolution: "minimatch@npm:10.2.5"
   dependencies:
@@ -7097,6 +7081,13 @@ __metadata:
   version: 0.5.2
   resolution: "moo@npm:0.5.2"
   checksum: 10c0/a9d9ad8198a51fe35d297f6e9fdd718298ca0b39a412e868a0ebd92286379ab4533cfc1f1f34516177f5129988ab25fe598f78e77c84e3bfe0d4a877b56525a8
+  languageName: node
+  linkType: hard
+
+"moo@npm:0.5.3":
+  version: 0.5.3
+  resolution: "moo@npm:0.5.3"
+  checksum: 10c0/5c5e00d7c57a69ce1cc2f21a90655ff10556481cc10fa70528c01e91f00deff8a65fa8da6dc7b27d136d66085055aab238fd1b19a75070263e0028e8f07c8213
   languageName: node
   linkType: hard
 
@@ -7955,9 +7946,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"renovate@npm:~43.58.0":
-  version: 43.58.0
-  resolution: "renovate@npm:43.58.0"
+"renovate@npm:~43.59.2":
+  version: 43.59.7
+  resolution: "renovate@npm:43.59.7"
   dependencies:
     "@aws-sdk/client-codecommit": "npm:3.1000.0"
     "@aws-sdk/client-ec2": "npm:3.1000.0"
@@ -8015,7 +8006,7 @@ __metadata:
     dequal: "npm:2.0.3"
     detect-indent: "npm:7.0.2"
     diff: "npm:8.0.3"
-    editorconfig: "npm:3.0.1"
+    editorconfig: "npm:3.0.2"
     email-addresses: "npm:5.0.0"
     emoji-regex: "npm:10.6.0"
     emojibase: "npm:17.0.0"
@@ -8045,7 +8036,7 @@ __metadata:
     markdown-it: "npm:14.1.1"
     markdown-table: "npm:3.0.4"
     minimatch: "npm:10.2.4"
-    moo: "npm:0.5.2"
+    moo: "npm:0.5.3"
     ms: "npm:2.1.3"
     neotraverse: "npm:0.6.18"
     node-html-parser: "npm:7.0.2"
@@ -8063,7 +8054,7 @@ __metadata:
     remark-gfm: "npm:4.0.1"
     remark-github: "npm:12.0.0"
     safe-stable-stringify: "npm:2.5.0"
-    sax: "npm:1.4.4"
+    sax: "npm:1.5.0"
     semver: "npm:7.7.4"
     semver-stable: "npm:3.0.0"
     semver-utils: "npm:1.1.4"
@@ -8090,7 +8081,7 @@ __metadata:
   bin:
     renovate: dist/renovate.js
     renovate-config-validator: dist/config-validator.js
-  checksum: 10c0/7e846815075379b95e5bc8791c0521d1b6d426aeffa35bd77156bc05051ed2eff981e3b62bfd1f4dd2e1bb7e7c46631ca654b127679b87ec21723dcdb8083d21
+  checksum: 10c0/7667ae08fe6a35eb27adbcb1438df6d732d77bbe895cce2951f3a078aec9d3a580383fb16eacc892f1a7829d2579c22e09c54ac090cfe49d3278f2adc81511a8
   languageName: node
   linkType: hard
 
@@ -8260,7 +8251,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sax@npm:1.4.4, sax@npm:^1.4.3":
+"sax@npm:1.5.0":
+  version: 1.5.0
+  resolution: "sax@npm:1.5.0"
+  checksum: 10c0/bc3b60a7bfecd40b18256596e96b32df2488339ae1e00a77f842b568f0831228a16c3bd357ec500241ec0b9dc7a475a1286427795c4a8c50bb8e8878f3435dd8
+  languageName: node
+  linkType: hard
+
+"sax@npm:^1.4.3":
   version: 1.4.4
   resolution: "sax@npm:1.4.4"
   checksum: 10c0/acb642f2de02ad6ae157cbf91fb026acea80cdf92e88c0aec2aa350c7db3479f62a7365c34a58e3b70a72ce11fa856a02c38cfd27f49e83c18c9c7e1d52aee55
@@ -8299,7 +8297,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semver@npm:7.7.4":
+"semver@npm:7.7.4, semver@npm:^7.7.4":
   version: 7.7.4
   resolution: "semver@npm:7.7.4"
   bin:
@@ -8317,7 +8315,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semver@npm:^7.0.0, semver@npm:^7.1.2, semver@npm:^7.3.2, semver@npm:^7.3.4, semver@npm:^7.3.5, semver@npm:^7.7.2":
+"semver@npm:^7.0.0, semver@npm:^7.1.2, semver@npm:^7.3.2, semver@npm:^7.3.4, semver@npm:^7.3.5":
   version: 7.7.2
   resolution: "semver@npm:7.7.2"
   bin:
