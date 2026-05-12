@@ -1489,7 +1489,7 @@ __metadata:
   resolution: "@nsheaps/renovate-config@workspace:."
   dependencies:
     "@biomejs/biome": "npm:~2.4.11"
-    renovate: "npm:~43.110.16"
+    renovate: "npm:~43.111.0"
   languageName: unknown
   linkType: soft
 
@@ -7250,9 +7250,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"renovate@npm:~43.110.16":
-  version: 43.110.18
-  resolution: "renovate@npm:43.110.18"
+"renovate@npm:~43.111.0":
+  version: 43.111.3
+  resolution: "renovate@npm:43.111.3"
   dependencies:
     "@aws-sdk/client-codecommit": "npm:3.1021.0"
     "@aws-sdk/client-ec2": "npm:3.1021.0"
@@ -7383,7 +7383,7 @@ __metadata:
   bin:
     renovate: dist/renovate.js
     renovate-config-validator: dist/config-validator.js
-  checksum: 10c0/a97a15af2787b92e1c2ba94f29da4d1100e5c82b7d667cc5021a9c354e1efbf72023d0d81e2aed104c9d477358dc505e5effa95225c4a614adc863d863478268
+  checksum: 10c0/9ff69c9e7b40c79861ff62701910d87107a05de729bb18ed2bfa48bdc9ffeb8f6a5f5ab5b95e5a8981548f711af0aa70df3664abe293304801aeca9514f0c316
   languageName: node
   linkType: hard
 
