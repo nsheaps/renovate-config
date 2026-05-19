@@ -1489,7 +1489,7 @@ __metadata:
   resolution: "@nsheaps/renovate-config@workspace:."
   dependencies:
     "@biomejs/biome": "npm:~2.4.12"
-    renovate: "npm:~43.129.0"
+    renovate: "npm:~43.132.1"
   languageName: unknown
   linkType: soft
 
@@ -2142,14 +2142,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@simple-git/args-pathspec@npm:^1.0.3":
+"@simple-git/args-pathspec@npm:^1.0.2, @simple-git/args-pathspec@npm:^1.0.3":
   version: 1.0.3
   resolution: "@simple-git/args-pathspec@npm:1.0.3"
   checksum: 10c0/91bfc99daa956df28e4efd683cd799f60c6d169fce6adf71a9efa80a6b5938fed4b03e55fa929cfd51aed64f3ada5c1e4edad45a3872dbd94d11924b3258b5bc
   languageName: node
   linkType: hard
 
-"@simple-git/argv-parser@npm:^1.1.0":
+"@simple-git/argv-parser@npm:^1.0.3":
   version: 1.1.1
   resolution: "@simple-git/argv-parser@npm:1.1.1"
   dependencies:
@@ -3600,14 +3600,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"better-sqlite3@npm:12.8.0":
-  version: 12.8.0
-  resolution: "better-sqlite3@npm:12.8.0"
+"better-sqlite3@npm:12.9.0":
+  version: 12.9.0
+  resolution: "better-sqlite3@npm:12.9.0"
   dependencies:
     bindings: "npm:^1.5.0"
     node-gyp: "npm:latest"
     prebuild-install: "npm:^7.1.1"
-  checksum: 10c0/b31da8a8a9bd0dd77d44c11fbfc72141a18b7267aed1ee5bedd481397415ace18eb54140706f82aca8149e4102fb2a543f833761e80f9668470ed53d03958515
+  checksum: 10c0/69ee0d908fa6a5c8643872aa664686ed02476e88cb654fe37f0fef5845081430d4280c82f5d370e169c2abe7a14a85d9bc718ea720058abf4f7cd9a8dbe227f0
   languageName: node
   linkType: hard
 
@@ -7273,9 +7273,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"renovate@npm:~43.129.0":
-  version: 43.129.1
-  resolution: "renovate@npm:43.129.1"
+"renovate@npm:~43.132.1":
+  version: 43.132.3
+  resolution: "renovate@npm:43.132.3"
   dependencies:
     "@aws-sdk/client-codecommit": "npm:3.1021.0"
     "@aws-sdk/client-ec2": "npm:3.1021.0"
@@ -7319,7 +7319,7 @@ __metadata:
     async-mutex: "npm:0.5.0"
     aws4: "npm:1.13.2"
     azure-devops-node-api: "npm:15.1.2"
-    better-sqlite3: "npm:12.8.0"
+    better-sqlite3: "npm:12.9.0"
     bunyan: "npm:1.8.15"
     cacache: "npm:20.0.4"
     changelog-filename-regex: "npm:2.0.1"
@@ -7385,7 +7385,7 @@ __metadata:
     semver-stable: "npm:3.0.0"
     semver-utils: "npm:1.1.4"
     shlex: "npm:3.0.0"
-    simple-git: "npm:3.36.0"
+    simple-git: "npm:3.35.2"
     slugify: "npm:1.6.9"
     source-map-support: "npm:0.5.21"
     strip-json-comments: "npm:5.0.3"
@@ -7407,7 +7407,7 @@ __metadata:
   bin:
     renovate: dist/renovate.js
     renovate-config-validator: dist/config-validator.js
-  checksum: 10c0/8dd8b79fd46b5941aa572ba2e21bc1022f8100c9501c728dfef68de1b272097cc87e83346e15b1995261f8c48e731cd4688c1ea7f9b544f220ca6d09801702f5
+  checksum: 10c0/167ff28c2d13dcc07ee6940e0d952c7f0285c24eb18575f630bbaf5a44c4d07fd51fd60db9aeed738f008ac2e2fcfedbf54f1e3b3d1d86ea6dce5e7621aa6d4d
   languageName: node
   linkType: hard
 
@@ -7698,16 +7698,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"simple-git@npm:3.36.0":
-  version: 3.36.0
-  resolution: "simple-git@npm:3.36.0"
+"simple-git@npm:3.35.2":
+  version: 3.35.2
+  resolution: "simple-git@npm:3.35.2"
   dependencies:
     "@kwsites/file-exists": "npm:^1.1.1"
     "@kwsites/promise-deferred": "npm:^1.1.1"
-    "@simple-git/args-pathspec": "npm:^1.0.3"
-    "@simple-git/argv-parser": "npm:^1.1.0"
+    "@simple-git/args-pathspec": "npm:^1.0.2"
+    "@simple-git/argv-parser": "npm:^1.0.3"
     debug: "npm:^4.4.0"
-  checksum: 10c0/4c22e57107535168f354e5abbbf6e618a7b39d76491ca225c70588520fbe86891f3b9a5c4f8a3fc0137e669aad2f0e11f6c6e677bfec07169cd18f29bf23cb77
+  checksum: 10c0/9cc675d4591713dc90856526f9a671ce614d2e75079988628df6eb6ce3e7ec629ae6ec77736c76960a85a9a1a6a9ee218c03eda016acb0c21bf6829f55422cb9
   languageName: node
   linkType: hard
 
