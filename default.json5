@@ -72,6 +72,16 @@
       platformAutomerge: false,
     },
     {
+      // Auto-merge all GitHub Actions updates from the nsheaps org, including
+      // digest (pinned SHA) updates. These are first-party actions we trust.
+      matchManagers: ["github-actions"],
+      matchPackageNames: ["/^nsheaps\\//"],
+      matchUpdateTypes: ["major", "minor", "patch", "digest", "pin", "pinDigest"],
+      automerge: true,
+      platformAutomerge: true,
+      automergeStrategy: "squash",
+    },
+    {
       matchManagers: ["npm"],
       // always update package.json versions, even if new versions satisfy
       // the current range(s)
