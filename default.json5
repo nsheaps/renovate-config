@@ -63,6 +63,15 @@
 
   packageRules: [
     {
+      // Never auto-merge Claude Code updates - these should always be reviewed
+      // manually. Matches both the GitHub repo slug (github-actions/github-releases
+      // datasources) and the npm package. Overrides the global automerge: true and
+      // the platformAutomerge enabled by the gha-digest-automerge preset.
+      matchPackageNames: ["anthropics/claude-code", "@anthropic-ai/claude-code"],
+      automerge: false,
+      platformAutomerge: false,
+    },
+    {
       matchManagers: ["npm"],
       // always update package.json versions, even if new versions satisfy
       // the current range(s)
