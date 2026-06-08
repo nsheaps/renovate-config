@@ -63,6 +63,27 @@
 
   packageRules: [
     {
+      // Never auto-merge Claude Code updates - these should always be reviewed
+      // manually. Matches both the GitHub repo slug (github-actions/github-releases
+      // datasources) and the npm package. Overrides the global automerge: true and
+      // the platformAutomerge enabled by the gha-digest-automerge preset.
+      matchPackageNames: ["anthropics/claude-code", "@anthropic-ai/claude-code", "claude-code"],
+      automerge: false,
+      platformAutomerge: false,
+    },
+    {
+      // Auto-merge all GitHub Actions updates from the nsheaps org, including
+      // digest (pinned SHA) updates. These are first-party actions we trust.
+      matchManagers: ["github-actions"],
+      matchPackageNames: ["/^nsheaps\\//"],
+      matchUpdateTypes: ["major", "minor", "patch", "digest", "pin", "pinDigest"],
+      automerge: true,
+      platformAutomerge: true,
+      automergeStrategy: "squash",
+      // First-party actions - no need to wait out the global release-age window
+      minimumReleaseAge: 0,
+    },
+    {
       matchManagers: ["npm"],
       // always update package.json versions, even if new versions satisfy
       // the current range(s)
