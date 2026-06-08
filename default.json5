@@ -67,7 +67,7 @@
       // manually. Matches both the GitHub repo slug (github-actions/github-releases
       // datasources) and the npm package. Overrides the global automerge: true and
       // the platformAutomerge enabled by the gha-digest-automerge preset.
-      matchPackageNames: ["anthropics/claude-code", "@anthropic-ai/claude-code"],
+      matchPackageNames: ["anthropics/claude-code", "@anthropic-ai/claude-code", "claude-code"],
       automerge: false,
       platformAutomerge: false,
     },
