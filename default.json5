@@ -80,6 +80,8 @@
       automerge: true,
       platformAutomerge: true,
       automergeStrategy: "squash",
+      // First-party actions - no need to wait out the global release-age window
+      minimumReleaseAge: 0,
     },
     {
       matchManagers: ["npm"],
