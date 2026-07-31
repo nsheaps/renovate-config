@@ -14,6 +14,6 @@
   },
   "devDependencies": {
     "@biomejs/biome": "~2.5.1",
-    "renovate": "~43.249.0"
+    "renovate": "~43.249.5"
   }
 }
