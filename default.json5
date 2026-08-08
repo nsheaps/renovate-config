@@ -72,14 +72,34 @@
       platformAutomerge: false,
     },
     {
-      // Auto-merge all GitHub Actions updates from the nsheaps org, including
-      // digest (pinned SHA) updates. These are first-party actions we trust.
+      // Group ALL GitHub Actions updates from the nsheaps AND squink owners
+      // (first-party / trusted) into ONE branch+merge so they create the least
+      // possible noise. Covers every update type — major, minor, patch, AND
+      // digest (pinned SHA) — intentionally overriding the broader "GitHub
+      // Actions" group from group-gha-updates.json5 for these two owners.
+      //
+      // These updates use Renovate-driven *branch* automerge
+      // (automergeType: "branch"): Renovate commits the update to a branch and,
+      // once required checks pass, merges it straight into the base branch
+      // WITHOUT opening a PR. platformAutomerge is therefore disabled — it only
+      // applies to PR-based automerge and conflicts with the "branch" type.
+      //
+      // NOTE: branch automerge to a protected `main` only takes effect once the
+      // org-wide repo-settings change in nsheaps/.github lands, granting the
+      // Renovate GitHub App a per-actor bypass of the PR/review requirement
+      // (required status checks still apply). See that PR for details.
+      //
+      // Reconciles/replaces the prior nsheaps-only auto-merge rule (PR #290).
+      // Digest pins are left intact (gha-pin-digests.json5 still applies).
       matchManagers: ["github-actions"],
-      matchPackageNames: ["/^nsheaps\\//"],
+      matchPackageNames: ["/^nsheaps\\//", "/^squink\\//"],
       matchUpdateTypes: ["major", "minor", "patch", "digest", "pin", "pinDigest"],
+      groupName: "nsheaps + squink GitHub Actions",
+      groupSlug: "nsheaps-squink-github-actions",
       automerge: true,
-      platformAutomerge: true,
+      automergeType: "branch",
       automergeStrategy: "squash",
+      platformAutomerge: false,
       // First-party actions - no need to wait out the global release-age window
       minimumReleaseAge: 0,
     },
