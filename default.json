@@ -3,7 +3,13 @@
     "config:recommended",
     ":semanticCommits",
     "group:monorepos",
-    "github>nsheaps/renovate-config//presets/extra-groupings.json5"
+    "github>nsheaps/renovate-config//presets/extra-groupings.json5",
+    "github>nsheaps/renovate-config//presets/gha-digest-automerge.json5",
+    "github>nsheaps/renovate-config//presets/gha-pin-digests.json5",
+    "github>nsheaps/renovate-config//presets/container-pin-digests.json5",
+    "github>nsheaps/renovate-config//presets/group-patch-updates.json5",
+    "github>nsheaps/renovate-config//presets/group-gha-updates.json5",
+    "github>nsheaps/renovate-config//presets/nsheaps-zero-release-age.json5"
   ],
   "timezone": "America/New_York",
   "configMigration": true,
@@ -24,6 +30,34 @@
   "dependencyDashboardOSVVulnerabilitySummary": "all",
   "rebaseWhen": "conflicted",
   "packageRules": [
+    {
+      "matchPackageNames": [
+        "anthropics/claude-code",
+        "@anthropic-ai/claude-code",
+        "claude-code"
+      ],
+      "automerge": false,
+      "platformAutomerge": false
+    },
+    {
+      "matchManagers": ["github-actions"],
+      "matchPackageNames": ["/^nsheaps\\//", "/^squink\\//"],
+      "matchUpdateTypes": [
+        "major",
+        "minor",
+        "patch",
+        "digest",
+        "pin",
+        "pinDigest"
+      ],
+      "groupName": "nsheaps + squink GitHub Actions",
+      "groupSlug": "nsheaps-squink-github-actions",
+      "automerge": true,
+      "automergeType": "branch",
+      "automergeStrategy": "squash",
+      "platformAutomerge": false,
+      "minimumReleaseAge": 0
+    },
     {
       "matchManagers": ["npm"],
       "rangeStrategy": "bump"
