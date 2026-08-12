@@ -40,28 +40,6 @@
       "platformAutomerge": false
     },
     {
-      "matchManagers": ["github-actions"],
-      "matchPackageNames": ["/^nsheaps\\//", "/^squink\\//"],
-      "matchUpdateTypes": [
-        "major",
-        "minor",
-        "patch",
-        "digest",
-        "pin",
-        "pinDigest"
-      ],
-      "groupName": "nsheaps + squink GitHub Actions",
-      "groupSlug": "nsheaps-squink-github-actions",
-      "automerge": true,
-      "automergeType": "branch",
-      "automergeStrategy": "squash",
-      "platformAutomerge": false,
-      "minimumReleaseAge": 0,
-      "prPriority": 10,
-      "prConcurrentLimit": 0,
-      "prHourlyLimit": 0
-    },
-    {
       "matchManagers": ["npm"],
       "rangeStrategy": "bump"
     },
@@ -98,6 +76,28 @@
     {
       "matchUpdateTypes": ["replacement"],
       "prPriority": 5
+    },
+    {
+      "matchManagers": ["github-actions"],
+      "matchPackageNames": ["/^nsheaps\\//", "/^squink\\//"],
+      "matchUpdateTypes": [
+        "major",
+        "minor",
+        "patch",
+        "digest",
+        "pin",
+        "pinDigest"
+      ],
+      "groupName": "nsheaps + squink GitHub Actions",
+      "groupSlug": "nsheaps-squink-github-actions",
+      "automerge": true,
+      "automergeType": "branch",
+      "automergeStrategy": "squash",
+      "platformAutomerge": false,
+      "minimumReleaseAge": 0,
+      "prPriority": 10,
+      "prConcurrentLimit": 0,
+      "prHourlyLimit": 0
     }
   ],
   "customManagers": [
