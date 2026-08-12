@@ -56,7 +56,10 @@
       "automergeType": "branch",
       "automergeStrategy": "squash",
       "platformAutomerge": false,
-      "minimumReleaseAge": 0
+      "minimumReleaseAge": 0,
+      "prPriority": 10,
+      "prConcurrentLimit": 0,
+      "prHourlyLimit": 0
     },
     {
       "matchManagers": ["npm"],
