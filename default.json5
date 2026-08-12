@@ -104,6 +104,22 @@
       minimumReleaseAge: 0,
     },
     {
+      // Exception to gha-pin-digests.json5 (extended above): this specific
+      // reusable-workflow reference is deliberately left unpinned (@main) in
+      // its consumer(s), e.g. nsheaps/.ai-agent-henry's repo-dispatch.yaml,
+      // so it always tracks nsheaps/agents' review-receiver pipeline instead
+      // of drifting behind a stale digest pin. A stale pin caused a real
+      // incident (nsheaps/agents#333, #334): the pinned commit predated the
+      // review-API fallback's required env plumbing, so the fallback
+      // silently couldn't run. Without this override, Renovate would just
+      // re-pin @main back to a digest on its next run, reintroducing the
+      // same failure mode. Must come after the "nsheaps + squink GitHub
+      // Actions" rule above so it wins for this narrower match.
+      matchManagers: ["github-actions"],
+      matchDepNames: ["nsheaps/agents/.github/workflows/review-receiver.yaml"],
+      pinDigests: false,
+    },
+    {
       matchManagers: ["npm"],
       // always update package.json versions, even if new versions satisfy
       // the current range(s)
