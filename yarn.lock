@@ -1004,7 +1004,7 @@ __metadata:
   resolution: "@nsheaps/renovate-config@workspace:."
   dependencies:
     "@biomejs/biome": "npm:~2.5.5"
-    renovate: "npm:~43.272.6"
+    renovate: "npm:~43.278.3"
   languageName: unknown
   linkType: soft
 
@@ -5678,9 +5678,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"renovate@npm:~43.272.6":
-  version: 43.272.9
-  resolution: "renovate@npm:43.272.9"
+"renovate@npm:~43.278.3":
+  version: 43.278.5
+  resolution: "renovate@npm:43.278.5"
   dependencies:
     "@aws-sdk/client-codecommit": "npm:3.1075.0"
     "@aws-sdk/client-ec2": "npm:3.1075.0"
@@ -5699,6 +5699,7 @@ __metadata:
     "@opentelemetry/instrumentation-bunyan": "npm:0.65.0"
     "@opentelemetry/instrumentation-http": "npm:0.220.0"
     "@opentelemetry/instrumentation-redis": "npm:0.68.0"
+    "@opentelemetry/otlp-transformer": "npm:0.220.0"
     "@opentelemetry/resource-detector-aws": "npm:2.20.0"
     "@opentelemetry/resource-detector-azure": "npm:0.28.0"
     "@opentelemetry/resource-detector-gcp": "npm:0.55.0"
@@ -5809,7 +5810,7 @@ __metadata:
   bin:
     renovate: dist/renovate.js
     renovate-config-validator: dist/config-validator.js
-  checksum: 10c0/a86e19050eb1c6c5c448a1c9f24695a760adddea2dcba5ff639b9c84ebb9e066596859174927854a6684599e60b0052a619b8e96462a5f9f1dcefa3365f5b9b7
+  checksum: 10c0/959d744d6916a1db3b31f7c914d4e9cb136f4bb9fdaf024b9cd37c74d610c48b65ee338051c47f39039135400eb29ab31920094c4d895d9b58be9ed78f14d5fd
   languageName: node
   linkType: hard
 
