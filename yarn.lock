@@ -1004,7 +1004,7 @@ __metadata:
   resolution: "@nsheaps/renovate-config@workspace:."
   dependencies:
     "@biomejs/biome": "npm:~2.5.5"
-    renovate: "npm:~43.281.1"
+    renovate: "npm:~43.285.3"
   languageName: unknown
   linkType: soft
 
@@ -5056,7 +5056,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nan@npm:^2.27.0":
+"nan@npm:^2.28.0":
   version: 2.28.0
   resolution: "nan@npm:2.28.0"
   dependencies:
@@ -5113,7 +5113,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-gyp@npm:^13.0.0":
+"node-gyp@npm:^13.0.1":
   version: 13.0.1
   resolution: "node-gyp@npm:13.0.1"
   dependencies:
@@ -5320,10 +5320,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"p-map@npm:7.0.5":
-  version: 7.0.5
-  resolution: "p-map@npm:7.0.5"
-  checksum: 10c0/4ccbb67d36a8d6e2125ab64ccabee424d1c89b03c10afb43830523c7b9aacc1005e5d21ca7aea70bdc556bd548b7bde65df23c7a18091bbf2b5daf9b86fbc8c5
+"p-map@npm:7.0.6":
+  version: 7.0.6
+  resolution: "p-map@npm:7.0.6"
+  checksum: 10c0/46e3b3c79b6179613161aa1a28c72cfe7155f27f1928afee1b2406858728f9dd4c29637bba25cef9b50517caacdcb71549f5ff228292524b0069b2310922b22e
   languageName: node
   linkType: hard
 
@@ -5594,14 +5594,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"re2@npm:1.26.0":
-  version: 1.26.0
-  resolution: "re2@npm:1.26.0"
+"re2@npm:1.26.1":
+  version: 1.26.1
+  resolution: "re2@npm:1.26.1"
   dependencies:
     install-artifact-from-github: "npm:^1.7.0"
-    nan: "npm:^2.27.0"
-    node-gyp: "npm:^13.0.0"
-  checksum: 10c0/1355e1ffa00d12f862d7c6b98be36a2baceea6dbe1e9fbe9eb52e38d2966637f3bc9d13eb4f15d868514b3039da3e6180984a753ff8fb9ee33afc596138da708
+    nan: "npm:^2.28.0"
+    node-gyp: "npm:^13.0.1"
+  checksum: 10c0/6204450f56e7b65772c02491c5c04b9264d3a95a5e635519b0f4f98623aef958d57d23b8c738c433a668d6a75166f03ae1ce3ee8ae7fe0bb2913fb2dcde4100f
   languageName: node
   linkType: hard
 
@@ -5678,9 +5678,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"renovate@npm:~43.281.1":
-  version: 43.281.1
-  resolution: "renovate@npm:43.281.1"
+"renovate@npm:~43.285.3":
+  version: 43.285.7
+  resolution: "renovate@npm:43.285.7"
   dependencies:
     "@aws-sdk/client-codecommit": "npm:3.1075.0"
     "@aws-sdk/client-ec2": "npm:3.1075.0"
@@ -5773,14 +5773,14 @@ __metadata:
     node-html-parser: "npm:7.1.0"
     openpgp: "npm:6.3.1"
     p-all: "npm:5.0.1"
-    p-map: "npm:7.0.5"
+    p-map: "npm:7.0.6"
     p-queue: "npm:9.3.1"
     p-throttle: "npm:8.1.0"
     parse-link-header: "npm:2.0.0"
     prettier: "npm:3.8.1"
     protobufjs: "npm:8.7.1"
     punycode: "npm:2.3.1"
-    re2: "npm:1.26.0"
+    re2: "npm:1.26.1"
     remark: "npm:15.0.1"
     remark-gfm: "npm:4.0.1"
     remark-github: "npm:12.0.0"
@@ -5810,7 +5810,7 @@ __metadata:
   bin:
     renovate: dist/renovate.js
     renovate-config-validator: dist/config-validator.js
-  checksum: 10c0/3e7f6c567eca17b65f3f592d4773cac2b8af7b3368946c488dd963f2df4fd1c66ca7041df097d24cfdff385aa785c145ad09de1f6241b7a6be50230d135d4263
+  checksum: 10c0/063fb072a894d3d01931c7212aec90bb8d18650739b84260b4c87b77306c69f976620c020f539726f980a204ee193221bd70f650110147402e2d7050854b4800
   languageName: node
   linkType: hard
 
