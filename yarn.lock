@@ -702,7 +702,7 @@ __metadata:
   resolution: "@nsheaps/renovate-config@workspace:."
   dependencies:
     "@biomejs/biome": "npm:~2.5.8"
-    renovate: "npm:~44.24.3"
+    renovate: "npm:~44.26.0"
   languageName: unknown
   linkType: soft
 
@@ -5162,6 +5162,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"pend@npm:~1.2.0":
+  version: 1.2.0
+  resolution: "pend@npm:1.2.0"
+  checksum: 10c0/8a87e63f7a4afcfb0f9f77b39bb92374afc723418b9cb716ee4257689224171002e07768eeade4ecd0e86f1fa3d8f022994219fb45634f2dbd78c6803e452458
+  languageName: node
+  linkType: hard
+
 "picocolors@npm:^1.1.1":
   version: 1.1.1
   resolution: "picocolors@npm:1.1.1"
@@ -5363,9 +5370,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"renovate@npm:~44.24.3":
-  version: 44.24.4
-  resolution: "renovate@npm:44.24.4"
+"renovate@npm:~44.26.0":
+  version: 44.26.3
+  resolution: "renovate@npm:44.26.3"
   dependencies:
     "@aws-sdk/client-codecommit": "npm:3.1095.0"
     "@aws-sdk/client-ec2": "npm:3.1095.0"
@@ -5486,6 +5493,7 @@ __metadata:
     validate-npm-package-name: "npm:7.0.2"
     xmldoc: "npm:2.0.3"
     yaml: "npm:2.9.0"
+    yauzl: "npm:3.4.0"
     zod: "npm:4.4.3"
   dependenciesMeta:
     openpgp:
@@ -5495,7 +5503,7 @@ __metadata:
   bin:
     renovate: dist/renovate.js
     renovate-config-validator: dist/config-validator.js
-  checksum: 10c0/c8365ef6a326232e1361079cf6fa8952dc0be3563281875012945d1b3db0695b709c517a796bfecb9d0077a0241ead92bae6ad2ed05126392232ba589b5a569a
+  checksum: 10c0/5568270b2a348c8da555f8d4cf5dc5f41321e0dcda3034f1eed7b7e9761d585a5bd9d44151be2dc3e646b4865eded206ad4739234693db300a4b907ca78d0839
   languageName: node
   linkType: hard
 
@@ -6455,6 +6463,15 @@ __metadata:
   bin:
     yaml: bin.mjs
   checksum: 10c0/f340718df45e97a9551b9bf9dac61c80050bc464513b710debfb5067c380c8472e3b67809cffacb4ab5ffb5e66ef9310816c88b05f371cec60abfedd8c88e0a2
+  languageName: node
+  linkType: hard
+
+"yauzl@npm:3.4.0":
+  version: 3.4.0
+  resolution: "yauzl@npm:3.4.0"
+  dependencies:
+    pend: "npm:~1.2.0"
+  checksum: 10c0/17a98c42c0065e8af429eb8a61f7a0e4562181ed54080366b838f34f741b6829f167f804787c86b7646bb042707f35871739f053de0548285e405a2eae4da025
   languageName: node
   linkType: hard
 
