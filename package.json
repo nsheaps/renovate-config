@@ -13,7 +13,7 @@
     "fix:lint": "biome lint --write ."
   },
   "devDependencies": {
-    "@biomejs/biome": "~2.5.10",
+    "@biomejs/biome": "~2.5.11",
     "renovate": "~44.46.6"
   }
 }
