@@ -894,7 +894,7 @@ __metadata:
   resolution: "@nsheaps/renovate-config@workspace:."
   dependencies:
     "@biomejs/biome": "npm:~2.5.12"
-    renovate: "npm:~44.59.2"
+    renovate: "npm:~44.61.6"
   languageName: unknown
   linkType: soft
 
@@ -4278,9 +4278,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"markdown-it@npm:14.3.0":
-  version: 14.3.0
-  resolution: "markdown-it@npm:14.3.0"
+"markdown-it@npm:14.3.1":
+  version: 14.3.1
+  resolution: "markdown-it@npm:14.3.1"
   dependencies:
     argparse: "npm:^2.0.1"
     entities: "npm:^4.5.0"
@@ -4290,7 +4290,7 @@ __metadata:
     uc.micro: "npm:^2.1.0"
   bin:
     markdown-it: bin/markdown-it.mjs
-  checksum: 10c0/b2dea908968109d6e9088ac972254bca842157d85d2e6838d0eb263cd8106e7e6a72663b138366cc98f57441d9f3f2ebfb842bf7b2f9e1c13187ebe70e0af8f9
+  checksum: 10c0/806f0f5f29f1ddd9fd465f905c1f2c54d64af9023095792dd5364e5807f77454f427ee75d66083b432d0900e21836f0fff940f94f5fc93c41b2f78970469874e
   languageName: node
   linkType: hard
 
@@ -5333,10 +5333,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"p-map@npm:7.0.6":
-  version: 7.0.6
-  resolution: "p-map@npm:7.0.6"
-  checksum: 10c0/46e3b3c79b6179613161aa1a28c72cfe7155f27f1928afee1b2406858728f9dd4c29637bba25cef9b50517caacdcb71549f5ff228292524b0069b2310922b22e
+"p-map@npm:7.0.7":
+  version: 7.0.7
+  resolution: "p-map@npm:7.0.7"
+  checksum: 10c0/41a94dca7f3e79b9b78ee343c22bfa2922357b2131eed93d12f0347c631450306463118d11ba4accac504463911dee7bddb97d14cbf7055f9d29d2ea99b28209
   languageName: node
   linkType: hard
 
@@ -5717,9 +5717,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"renovate@npm:~44.59.2":
-  version: 44.59.3
-  resolution: "renovate@npm:44.59.3"
+"renovate@npm:~44.61.6":
+  version: 44.61.6
+  resolution: "renovate@npm:44.61.6"
   dependencies:
     "@aws-sdk/client-codecommit": "npm:3.1117.0"
     "@aws-sdk/client-ec2": "npm:3.1117.0"
@@ -5805,7 +5805,7 @@ __metadata:
     klona: "npm:2.0.6"
     lru-cache: "npm:11.5.2"
     luxon: "npm:3.7.2"
-    markdown-it: "npm:14.3.0"
+    markdown-it: "npm:14.3.1"
     markdown-table: "npm:3.0.4"
     minimatch: "npm:10.2.6"
     moo: "npm:0.5.3"
@@ -5814,7 +5814,7 @@ __metadata:
     node-html-parser: "npm:7.1.0"
     openpgp: "npm:6.3.1"
     p-all: "npm:5.0.1"
-    p-map: "npm:7.0.6"
+    p-map: "npm:7.0.7"
     p-queue: "npm:9.3.3"
     p-throttle: "npm:8.1.0"
     parse-link-header: "npm:2.0.0"
@@ -5852,7 +5852,7 @@ __metadata:
   bin:
     renovate: dist/renovate.js
     renovate-config-validator: dist/config-validator.js
-  checksum: 10c0/d78c1fc42c9189f041953318acd1ce5f417f48f4f2cdc4b23405277be691df6ae85f9ff36ca66582d3b4e916ad3f633c90ad0843608f38765cf77f2748a4d8be
+  checksum: 10c0/e6b0a9a0d911cc6f47c978c66a66a72d521b911558c216906f1fb57d728a2af4753138eb4b1fbf3a0b952fdb40738676d7a2a8d58827e4b84971f4420cee8274
   languageName: node
   linkType: hard
 
