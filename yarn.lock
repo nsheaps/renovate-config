@@ -894,7 +894,7 @@ __metadata:
   resolution: "@nsheaps/renovate-config@workspace:."
   dependencies:
     "@biomejs/biome": "npm:~2.5.14"
-    renovate: "npm:~44.95.0"
+    renovate: "npm:~44.97.2"
   languageName: unknown
   linkType: soft
 
@@ -1519,15 +1519,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@renovatebot/detect-tools@npm:4.0.16":
-  version: 4.0.16
-  resolution: "@renovatebot/detect-tools@npm:4.0.16"
+"@renovatebot/detect-tools@npm:4.0.17":
+  version: 4.0.17
+  resolution: "@renovatebot/detect-tools@npm:4.0.17"
   dependencies:
     fs-extra: "npm:^11.4.0"
     toml-eslint-parser: "npm:^1.0.3"
     upath: "npm:^3.0.8"
-    zod: "npm:^4.6.1"
-  checksum: 10c0/6dccc2a73c73a0b7168311b3ef415cd680ad32012bb68fb7473068f36768e8e395d2c2c71dca1a828dc613de8c1c2dcaa11d2943a32aa3c0a44a502cca19bead
+    zod: "npm:^4.6.2"
+  checksum: 10c0/b1544f1bae527007617fa5e4ba312c00c15d8b02aafcb4ec09046d1635fd7b4af9379b1c8149efb36b04c8af334b4b5e8d08a181beeda99cf9462084ad1e7dce
   languageName: node
   linkType: hard
 
@@ -1573,10 +1573,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@renovatebot/pgp@npm:1.4.1":
-  version: 1.4.1
-  resolution: "@renovatebot/pgp@npm:1.4.1"
-  checksum: 10c0/55fa47bf3c1cd857297c07460c0ecb7818095098afcf4a7e6a96b15877ca594969b511bc2977c893e0387a2cba7fc12277025f6c0e370d2920f83406ec8bb1ec
+"@renovatebot/pgp@npm:2.0.1":
+  version: 2.0.1
+  resolution: "@renovatebot/pgp@npm:2.0.1"
+  checksum: 10c0/7d6539ab6b2eb376e88dfc4ffd398da1e898487516b28dd87dc90e8e4b43aae789fbaa97ef39657ffaa723736a92971bc1c53460d1b3277fdc67bf6612aa00f8
   languageName: node
   linkType: hard
 
@@ -2656,12 +2656,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cronstrue@npm:3.25.0":
-  version: 3.25.0
-  resolution: "cronstrue@npm:3.25.0"
+"cronstrue@npm:3.26.0":
+  version: 3.26.0
+  resolution: "cronstrue@npm:3.26.0"
   bin:
     cronstrue: bin/cli.js
-  checksum: 10c0/c23c6f0b1c596e053b21edb1a85df4130b1f7f6f9ffc747a2ba72f1eeb151e8e9ac45005179bfb6b07d224c176cc755292867f23e22ea7aadac8b200903f72d3
+  checksum: 10c0/8f4455910dd64d859b72b971e61b462c6e8dc700076b0e6fee7e6374b70b2e1998dcdf80cdd10b6b4022fd2e802a19bbb0ec686b3011d0393ba9b8db401ab564
   languageName: node
   linkType: hard
 
@@ -4278,9 +4278,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"markdown-it@npm:15.0.1":
-  version: 15.0.1
-  resolution: "markdown-it@npm:15.0.1"
+"markdown-it@npm:15.0.2":
+  version: 15.0.2
+  resolution: "markdown-it@npm:15.0.2"
   dependencies:
     argparse: "npm:^3.0.0"
     entities: "npm:^8.0.0"
@@ -4290,7 +4290,7 @@ __metadata:
     uc.micro: "npm:^3.0.0"
   bin:
     markdown-it: bin/markdown-it.mjs
-  checksum: 10c0/e16357ffdb28358f290aef2b7618aa578faef192692a2d3b715f53c2e75bb97d8d15d6f5eab872fda04fe54eccb1065c63bcdfd1d5d13e94d78789a5ccbb5f9c
+  checksum: 10c0/a06c47578157bcb01fc161951254158d41386f5f7dc09d335453568c9a95bc58f7099fad235d5be92d8b29fe8672b25c9b809313b64df0eacebdda804c68ca09
   languageName: node
   linkType: hard
 
@@ -5711,9 +5711,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"renovate@npm:~44.95.0":
-  version: 44.95.0
-  resolution: "renovate@npm:44.95.0"
+"renovate@npm:~44.97.2":
+  version: 44.97.6
+  resolution: "renovate@npm:44.97.6"
   dependencies:
     "@aws-sdk/client-codecommit": "npm:3.1117.0"
     "@aws-sdk/client-ec2": "npm:3.1117.0"
@@ -5746,11 +5746,11 @@ __metadata:
     "@pnpm/parse-overrides": "npm:1001.0.4"
     "@qnighy/marshal": "npm:0.1.3"
     "@redis/client": "npm:6.2.1"
-    "@renovatebot/detect-tools": "npm:4.0.16"
+    "@renovatebot/detect-tools": "npm:4.0.17"
     "@renovatebot/good-enough-parser": "npm:2.0.1"
     "@renovatebot/osv-offline": "npm:3.0.10"
     "@renovatebot/pep440": "npm:5.0.1"
-    "@renovatebot/pgp": "npm:1.4.1"
+    "@renovatebot/pgp": "npm:2.0.1"
     "@renovatebot/ruby-semver": "npm:5.0.0"
     "@sindresorhus/is": "npm:8.1.0"
     "@yarnpkg/core": "npm:4.9.1"
@@ -5768,7 +5768,7 @@ __metadata:
     commander: "npm:15.0.0"
     common-tags: "npm:1.8.2"
     croner: "npm:10.0.1"
-    cronstrue: "npm:3.25.0"
+    cronstrue: "npm:3.26.0"
     deepmerge: "npm:4.3.1"
     dequal: "npm:2.0.3"
     detect-indent: "npm:7.0.2"
@@ -5800,7 +5800,7 @@ __metadata:
     klona: "npm:2.0.6"
     lru-cache: "npm:11.5.2"
     luxon: "npm:3.7.2"
-    markdown-it: "npm:15.0.1"
+    markdown-it: "npm:15.0.2"
     markdown-table: "npm:3.0.4"
     minimatch: "npm:10.2.6"
     moo: "npm:0.5.3"
@@ -5839,7 +5839,7 @@ __metadata:
     xmldoc: "npm:3.0.0"
     yaml: "npm:2.9.0"
     yauzl: "npm:3.4.0"
-    zod: "npm:4.6.1"
+    zod: "npm:4.6.2"
   dependenciesMeta:
     openpgp:
       optional: true
@@ -5848,7 +5848,7 @@ __metadata:
   bin:
     renovate: dist/renovate.js
     renovate-config-validator: dist/config-validator.js
-  checksum: 10c0/ba348248e8027c01cd3c7d6ec38365847e91e6f10c9d61621ee2dd83b66c53babb9a24a481abbc1fe313b92817d42e34a11296768984c4cc53e1f051c43da19b
+  checksum: 10c0/ca11f6aed3ad1b067b8fa8876b793fedd412640482ff260fff68170358ab6f08f10cf90a07805fe1ec1fba67cd7169b43c3a2b94d9a9bedde62bfd59ebdd432b
   languageName: node
   linkType: hard
 
@@ -6869,14 +6869,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"zod@npm:4.6.1":
-  version: 4.6.1
-  resolution: "zod@npm:4.6.1"
-  checksum: 10c0/ef427982cc9b89e25a2559f5d28c9ee29504332de35c50523c2c61bbbb1f55a688713f7d39ddcb2e4fb4ef905432699b9cac7510e7b7d4da3f41099e35601dd2
+"zod@npm:4.6.2":
+  version: 4.6.2
+  resolution: "zod@npm:4.6.2"
+  checksum: 10c0/0d0dc2dc37c62e8777bb2d691e7fb8a0c80cc57e343df69fa62a57f26e0ac20107b14afda34f3bed98b27e5378eee2bbc7c5d23c203c3602690148a014dec7cd
   languageName: node
   linkType: hard
 
-"zod@npm:^4.6.1":
+"zod@npm:^4.6.2":
   version: 4.6.7
   resolution: "zod@npm:4.6.7"
   checksum: 10c0/4ce2eb14034317b7254e347ca37b5ad591cf8333147030cf05b9b5d31692d45073f7f2747aa50cf8c6b29012194d2b22978cecc89969cf34a0d18e89d0ee7d7b
