@@ -894,7 +894,7 @@ __metadata:
   resolution: "@nsheaps/renovate-config@workspace:."
   dependencies:
     "@biomejs/biome": "npm:~2.5.14"
-    renovate: "npm:~44.103.2"
+    renovate: "npm:~44.106.0"
   languageName: unknown
   linkType: soft
 
@@ -1519,15 +1519,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@renovatebot/detect-tools@npm:4.0.19":
-  version: 4.0.19
-  resolution: "@renovatebot/detect-tools@npm:4.0.19"
+"@renovatebot/detect-tools@npm:4.0.20":
+  version: 4.0.20
+  resolution: "@renovatebot/detect-tools@npm:4.0.20"
   dependencies:
     fs-extra: "npm:^11.4.0"
     toml-eslint-parser: "npm:^1.0.3"
     upath: "npm:^3.0.8"
-    zod: "npm:^4.6.4"
-  checksum: 10c0/877759fb74267063c59975ecf2a64787617e3fdbfdeeeedbf6fdb30bf1d9373d8421889493e496400aa6232efab6784355823ccf4209f3bd43179cba55968675
+    zod: "npm:^4.6.5"
+  checksum: 10c0/39fbca0661e9583a500ac1a0eb4786aa7228650e8ba2b8101bacb5f63ad5e1214a2c68ee6b6830c3a4856b159522473a9ce4d39b65f613799d6c0c6d6e8e7c52
   languageName: node
   linkType: hard
 
@@ -2202,13 +2202,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"azure-devops-node-api@npm:17.0.0":
-  version: 17.0.0
-  resolution: "azure-devops-node-api@npm:17.0.0"
+"azure-devops-node-api@npm:17.0.1":
+  version: 17.0.1
+  resolution: "azure-devops-node-api@npm:17.0.1"
   dependencies:
     tunnel: "npm:0.0.6"
-    typed-rest-client: "npm:3.1.0"
-  checksum: 10c0/4ae3ecef18abd3761101c0da17a7c18f52d1c6162b917d29f79026208b3741ef6af819ed1429ab0d35a1b6a8715474cb1b2c1e566fcc7a2f5305039bd0adc016
+    typed-rest-client: "npm:3.1.2"
+  checksum: 10c0/5e4455c8757b6df2cb80a757f550953dec251ae26e1562c5863d596567fdc2190f67f01a9e4c60d9e60acb7bea9ff138d6f4b16a84ef81c2aee8c0668c9e4235
   languageName: node
   linkType: hard
 
@@ -5603,13 +5603,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"qs@npm:6.15.3":
-  version: 6.15.3
-  resolution: "qs@npm:6.15.3"
+"qs@npm:^6.16.0":
+  version: 6.16.1
+  resolution: "qs@npm:6.16.1"
   dependencies:
     es-define-property: "npm:^1.0.1"
     side-channel: "npm:^1.1.1"
-  checksum: 10c0/8f3f6e45ece255347d57696628401cde29e9ec649fff698b53bd3150dea7cefdf33036e1bc1826b9f110bfa7cb0ec4ab9f5297eca628ce216c55af82c304e08e
+  checksum: 10c0/84ee9124b251ab2953132fbea1d70c966aa6e6496cccabedbbb83afa412bf4177bddebc779ca3ddafe23da83b2f593d530b41be6a726e971404fabb20ff22c94
   languageName: node
   linkType: hard
 
@@ -5711,9 +5711,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"renovate@npm:~44.103.2":
-  version: 44.103.7
-  resolution: "renovate@npm:44.103.7"
+"renovate@npm:~44.106.0":
+  version: 44.106.0
+  resolution: "renovate@npm:44.106.0"
   dependencies:
     "@aws-sdk/client-codecommit": "npm:3.1117.0"
     "@aws-sdk/client-ec2": "npm:3.1117.0"
@@ -5746,7 +5746,7 @@ __metadata:
     "@pnpm/parse-overrides": "npm:1001.0.4"
     "@qnighy/marshal": "npm:0.1.3"
     "@redis/client": "npm:6.2.1"
-    "@renovatebot/detect-tools": "npm:4.0.19"
+    "@renovatebot/detect-tools": "npm:4.0.20"
     "@renovatebot/good-enough-parser": "npm:2.0.1"
     "@renovatebot/osv-offline": "npm:3.0.11"
     "@renovatebot/pep440": "npm:5.0.1"
@@ -5760,7 +5760,7 @@ __metadata:
     agentkeepalive: "npm:4.6.0"
     async-mutex: "npm:0.5.0"
     aws4: "npm:1.13.2"
-    azure-devops-node-api: "npm:17.0.0"
+    azure-devops-node-api: "npm:17.0.1"
     bunyan: "npm:1.8.15"
     cacache: "npm:20.0.4"
     changelog-filename-regex: "npm:2.0.1"
@@ -5839,7 +5839,7 @@ __metadata:
     xmldoc: "npm:3.0.0"
     yaml: "npm:2.9.1"
     yauzl: "npm:3.4.0"
-    zod: "npm:4.6.4"
+    zod: "npm:4.6.5"
   dependenciesMeta:
     openpgp:
       optional: true
@@ -5848,7 +5848,7 @@ __metadata:
   bin:
     renovate: dist/renovate.js
     renovate-config-validator: dist/config-validator.js
-  checksum: 10c0/0b512e49721f1f98acf19122c487b4572616dba982d7184af3e390666c10675a59325938e240318345d2e0d33930294e7379a00d4ec8bffff9184e2d7d24d21f
+  checksum: 10c0/5d4c04b3d97612e4e80597c219370f4d842e50c2009077e0fd2dee5922891852a7be2a04a584956cbe7a7822ebfa515d0181e9f646b90ea8fb24e3d6c2dd589f
   languageName: node
   linkType: hard
 
@@ -6468,16 +6468,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typed-rest-client@npm:3.1.0":
-  version: 3.1.0
-  resolution: "typed-rest-client@npm:3.1.0"
+"typed-rest-client@npm:3.1.2":
+  version: 3.1.2
+  resolution: "typed-rest-client@npm:3.1.2"
   dependencies:
     des.js: "npm:^1.1.0"
     js-md4: "npm:^0.3.2"
-    qs: "npm:6.15.3"
+    qs: "npm:^6.16.0"
     tunnel: "npm:0.0.6"
     underscore: "npm:^1.13.8"
-  checksum: 10c0/b3f03a5bbb0c7474c4eb5c0743a584846915fdfc41252e887677914f753364b992f30c1aace0c207af42ea0a38cda7fef25a48f6cc089040e3c8da80e76d34e4
+  checksum: 10c0/7243655c54b11c54591dc90f81d711f1c22ddcc6f4e361e3d62ce17030b97dea19c033a14a30cf22e3241821083bdd07d776eb8c8ac28d20f43ed35903bb7ba7
   languageName: node
   linkType: hard
 
@@ -6869,14 +6869,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"zod@npm:4.6.4":
-  version: 4.6.4
-  resolution: "zod@npm:4.6.4"
-  checksum: 10c0/c0b9f14353e7cbd7b984703b28ede906c0b6784ca4d0fdb0e0a371add14d6fc29ec4428ef5234a9189ef9db6cfb936cdc98201fb0d446e7521b81cabf627ea3d
+"zod@npm:4.6.5":
+  version: 4.6.5
+  resolution: "zod@npm:4.6.5"
+  checksum: 10c0/32eb6c5e98becbe045675b2141c3611451c16ba567f9779231d79af41c4d651ca1c22f154aef7e6c6e77b929f23e43f1154ca05b82e119e922353725d6776af5
   languageName: node
   linkType: hard
 
-"zod@npm:^4.6.4":
+"zod@npm:^4.6.5":
   version: 4.6.7
   resolution: "zod@npm:4.6.7"
   checksum: 10c0/4ce2eb14034317b7254e347ca37b5ad591cf8333147030cf05b9b5d31692d45073f7f2747aa50cf8c6b29012194d2b22978cecc89969cf34a0d18e89d0ee7d7b
