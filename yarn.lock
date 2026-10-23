@@ -894,7 +894,7 @@ __metadata:
   resolution: "@nsheaps/renovate-config@workspace:."
   dependencies:
     "@biomejs/biome": "npm:~2.5.14"
-    renovate: "npm:~44.106.0"
+    renovate: "npm:~44.108.2"
   languageName: unknown
   linkType: soft
 
@@ -1573,10 +1573,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@renovatebot/pgp@npm:2.0.1":
-  version: 2.0.1
-  resolution: "@renovatebot/pgp@npm:2.0.1"
-  checksum: 10c0/7d6539ab6b2eb376e88dfc4ffd398da1e898487516b28dd87dc90e8e4b43aae789fbaa97ef39657ffaa723736a92971bc1c53460d1b3277fdc67bf6612aa00f8
+"@renovatebot/pgp@npm:2.0.2":
+  version: 2.0.2
+  resolution: "@renovatebot/pgp@npm:2.0.2"
+  checksum: 10c0/fb83cc28f22c6cd89136d908b62c79b9105d632222f791d078256acda5e89c60c5004d59ea18facd2f37580d6f3302ee788b2c6f035ba3e6fca2c531277abd1e
   languageName: node
   linkType: hard
 
@@ -2656,12 +2656,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cronstrue@npm:3.26.0":
-  version: 3.26.0
-  resolution: "cronstrue@npm:3.26.0"
+"cronstrue@npm:3.27.0":
+  version: 3.27.0
+  resolution: "cronstrue@npm:3.27.0"
   bin:
     cronstrue: bin/cli.js
-  checksum: 10c0/8f4455910dd64d859b72b971e61b462c6e8dc700076b0e6fee7e6374b70b2e1998dcdf80cdd10b6b4022fd2e802a19bbb0ec686b3011d0393ba9b8db401ab564
+  checksum: 10c0/87dbcc9dae9fcdf7d335a8b11f6ab8d60f12089e59fcf67424b2f9134499f25b3f646d0743c3303325f112c97522bd183063538b2b996089f6d884a3343d0989
   languageName: node
   linkType: hard
 
@@ -5711,9 +5711,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"renovate@npm:~44.106.0":
-  version: 44.106.0
-  resolution: "renovate@npm:44.106.0"
+"renovate@npm:~44.108.2":
+  version: 44.108.2
+  resolution: "renovate@npm:44.108.2"
   dependencies:
     "@aws-sdk/client-codecommit": "npm:3.1117.0"
     "@aws-sdk/client-ec2": "npm:3.1117.0"
@@ -5750,7 +5750,7 @@ __metadata:
     "@renovatebot/good-enough-parser": "npm:2.0.1"
     "@renovatebot/osv-offline": "npm:3.0.11"
     "@renovatebot/pep440": "npm:5.0.1"
-    "@renovatebot/pgp": "npm:2.0.1"
+    "@renovatebot/pgp": "npm:2.0.2"
     "@renovatebot/ruby-semver": "npm:5.0.0"
     "@sindresorhus/is": "npm:8.1.0"
     "@yarnpkg/core": "npm:4.9.1"
@@ -5768,7 +5768,7 @@ __metadata:
     commander: "npm:15.0.0"
     common-tags: "npm:1.8.2"
     croner: "npm:10.0.1"
-    cronstrue: "npm:3.26.0"
+    cronstrue: "npm:3.27.0"
     deepmerge: "npm:4.3.1"
     dequal: "npm:2.0.3"
     detect-indent: "npm:7.0.2"
@@ -5848,7 +5848,7 @@ __metadata:
   bin:
     renovate: dist/renovate.js
     renovate-config-validator: dist/config-validator.js
-  checksum: 10c0/5d4c04b3d97612e4e80597c219370f4d842e50c2009077e0fd2dee5922891852a7be2a04a584956cbe7a7822ebfa515d0181e9f646b90ea8fb24e3d6c2dd589f
+  checksum: 10c0/60a9cf666151e3f642964479c0d9dda4d58529c43c340a22547fde9b90eb90382ff36d65e964d793e49e994a9be2d491ba14880f0e798f91461b4705484126c4
   languageName: node
   linkType: hard
 
