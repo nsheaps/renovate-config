@@ -906,7 +906,7 @@ __metadata:
   resolution: "@nsheaps/renovate-config@workspace:."
   dependencies:
     "@biomejs/biome": "npm:~2.5.15"
-    renovate: "npm:~44.165.1"
+    renovate: "npm:~44.166.0"
   languageName: unknown
   linkType: soft
 
@@ -1551,9 +1551,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@renovatebot/base-image@npm:13.132.2":
-  version: 13.132.2
-  resolution: "@renovatebot/base-image@npm:13.132.2"
+"@renovatebot/base-image@npm:13.133.0":
+  version: 13.133.0
+  resolution: "@renovatebot/base-image@npm:13.133.0"
   dependencies:
     "@containerbase/base": "npm:14.42.0"
   peerDependencies:
@@ -1561,7 +1561,7 @@ __metadata:
   peerDependenciesMeta:
     zod:
       optional: true
-  checksum: 10c0/988bb76a5b6ca7d8e7733f68ec440916fadbaf0f5fb8d1ea2bb1433dbe4ed09d6a66056c36f684d47277017acec5c12a7acf15bfc17863770e65eb718d12eb2b
+  checksum: 10c0/a47d192e72018aa9919e091ef5169c2efcf3b790df5a3ea97615b57efd6c3607dd964743e5b71c438cbfacbbd788027b9dac45b9360ee48d1a1581304128d194
   languageName: node
   linkType: hard
 
@@ -5748,9 +5748,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"renovate@npm:~44.165.1":
-  version: 44.165.3
-  resolution: "renovate@npm:44.165.3"
+"renovate@npm:~44.166.0":
+  version: 44.166.0
+  resolution: "renovate@npm:44.166.0"
   dependencies:
     "@aws-sdk/client-codecommit": "npm:3.1139.0"
     "@aws-sdk/client-ec2": "npm:3.1139.0"
@@ -5783,7 +5783,7 @@ __metadata:
     "@pnpm/parse-overrides": "npm:1001.0.4"
     "@qnighy/marshal": "npm:0.1.3"
     "@redis/client": "npm:6.3.0"
-    "@renovatebot/base-image": "npm:13.132.2"
+    "@renovatebot/base-image": "npm:13.133.0"
     "@renovatebot/detect-tools": "npm:4.0.21"
     "@renovatebot/good-enough-parser": "npm:2.0.1"
     "@renovatebot/osv-offline": "npm:3.0.12"
@@ -5884,7 +5884,7 @@ __metadata:
   bin:
     renovate: dist/renovate.js
     renovate-config-validator: dist/config-validator.js
-  checksum: 10c0/b4ecdc74f433b0016a5c7059b140eb242e5f25f42e51a5abb8049536c194d2f0421e304395d211408f35e8f1e64c2196cb53351f650196ec32fa370235b315c7
+  checksum: 10c0/1753f1efad8b22d7d5e39eb1f507f66fd917d63d30f6abcfd4baed8eeecfc0ff47acb75af59709d67da180aff9e331443c1c444ca7e89767476fbaef9f6c46e8
   languageName: node
   linkType: hard
 
