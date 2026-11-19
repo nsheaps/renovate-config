@@ -1,5 +1,5 @@
 [tools]
-node = "24.22.2"
+node = "24.22.3"
 shellcheck = "latest"
 shfmt = "latest"
 
