@@ -20,7 +20,6 @@ Other options:
 
 - `github>nsheaps/renovate-config//presets/preset-name.json5`
 
-
 ## Development
 
 We use json5, which allows comments and trailing commas.
