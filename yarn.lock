@@ -760,9 +760,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@containerbase/base@npm:14.49.0":
-  version: 14.49.0
-  resolution: "@containerbase/base@npm:14.49.0"
+"@containerbase/base@npm:14.50.0":
+  version: 14.50.0
+  resolution: "@containerbase/base@npm:14.50.0"
   dependencies:
     semver: "npm:^7.8.5"
   peerDependencies:
@@ -770,7 +770,7 @@ __metadata:
   peerDependenciesMeta:
     zod:
       optional: true
-  checksum: 10c0/cf208e78dd37bdcf512b9eab946bcd434d7504743f65d23d83a0e98f97e5a6fdcef81fcc3614b27d657606a89e598a3c4f8055ef396f86dd62337655520bd8e9
+  checksum: 10c0/b6f615d5f6df3a141528dfda1798569bb751da1bc8b30e44e00b512aac8a43c8eba4709ac0807765b3c6cbf5a0304904a36b8a3beacbfe00bcfeea29ec44a180
   languageName: node
   linkType: hard
 
@@ -928,7 +928,7 @@ __metadata:
   resolution: "@nsheaps/renovate-config@workspace:."
   dependencies:
     "@biomejs/biome": "npm:~2.6.2"
-    renovate: "npm:~44.176.2"
+    renovate: "npm:~44.178.5"
   languageName: unknown
   linkType: soft
 
@@ -1196,14 +1196,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@opentelemetry/resource-detector-github@npm:0.32.0":
-  version: 0.32.0
-  resolution: "@opentelemetry/resource-detector-github@npm:0.32.0"
+"@opentelemetry/resource-detector-github@npm:0.33.0":
+  version: 0.33.0
+  resolution: "@opentelemetry/resource-detector-github@npm:0.33.0"
   dependencies:
     "@opentelemetry/resources": "npm:^2.0.0"
   peerDependencies:
     "@opentelemetry/api": ^1.0.0
-  checksum: 10c0/6b57aa3e2d2ace82e566e214c659b5ea49fec097271aec7458d66984aa2c99f6bcb1c5e0fbe0752fd59e579775c2f6880e716ad6081688b6402ff2015cf6c682
+  checksum: 10c0/e8b8d6a86545935720df685b0491c783b8fb8deb84dc4c2e5f9c52558882204882054e1e8309606929e2a86742098f71e67d2e5d8c4737dcd672b5eb1afc5bfc
   languageName: node
   linkType: hard
 
@@ -1573,17 +1573,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@renovatebot/base-image@npm:13.139.3":
-  version: 13.139.3
-  resolution: "@renovatebot/base-image@npm:13.139.3"
+"@renovatebot/base-image@npm:13.140.2":
+  version: 13.140.2
+  resolution: "@renovatebot/base-image@npm:13.140.2"
   dependencies:
-    "@containerbase/base": "npm:14.49.0"
+    "@containerbase/base": "npm:14.50.0"
   peerDependencies:
     zod: ^4.0.0
   peerDependenciesMeta:
     zod:
       optional: true
-  checksum: 10c0/2308a8bdb9e8a1f1ca88428a12181818fd3c6834fabef8e62c2fe4fa60d0d91b6b6c54829077b5b061da0103fa6cec75425e3c1704671d345eae13defad72fb6
+  checksum: 10c0/5fb4fa900c83f6fdff246fb6cd2a69a909ff7e608170884ab7d5afccdd44a30510ad10cbe061fc0229fa90465a6e06346144f746fe64421cc98ea540476423f0
   languageName: node
   linkType: hard
 
@@ -3403,14 +3403,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gaxios@npm:^7.1.4":
-  version: 7.1.4
-  resolution: "gaxios@npm:7.1.4"
+"gaxios@npm:^8.3.0":
+  version: 8.3.3
+  resolution: "gaxios@npm:8.3.3"
   dependencies:
     extend: "npm:^3.0.2"
     https-proxy-agent: "npm:^7.0.1"
     node-fetch: "npm:^3.3.2"
-  checksum: 10c0/147adf5f2606442945d8b19df1e9fe2833a5ec30af00743d0c44292899c5eef1c0a77b74ff07d9dfdc6b009c08af1f3f3d1d5d772109fde50c92435533795803
+  checksum: 10c0/868b34bb7ea8d44933971a6d9a1c6f3da6b5d468a56c100b250f82aa819a36cf4f375330c51f0e91624a60a8206008be32e9a2bc9c725fb1e7af39e70d0c3f42
   languageName: node
   linkType: hard
 
@@ -3600,17 +3600,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"google-auth-library@npm:11.3.0":
-  version: 11.3.0
-  resolution: "google-auth-library@npm:11.3.0"
+"google-auth-library@npm:11.3.1":
+  version: 11.3.1
+  resolution: "google-auth-library@npm:11.3.1"
   dependencies:
     base64-js: "npm:^1.3.0"
     ecdsa-sig-formatter: "npm:^1.0.11"
-    gaxios: "npm:^7.1.4"
+    gaxios: "npm:^8.3.0"
     gcp-metadata: "npm:^9.0.0"
     google-logging-utils: "npm:^2.0.0"
     jws: "npm:^4.0.0"
-  checksum: 10c0/56d7140f04d06f67c24f9e17750345f362b407c3c9df91df59df81c3fb03ff41defc7c7a1a52087a1bff420e91402fc6685092276e2513ed5b0f9af73b4c9717
+  checksum: 10c0/db72e7977fdb965312c5fc4696451f500e548607e413cac4a63e3c5ce37097e3c387cf43a1eb35ad8dbbbc4934b37370ffa0eda8a07dbe8e446c6b057a1af983
   languageName: node
   linkType: hard
 
@@ -5770,9 +5770,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"renovate@npm:~44.176.2":
-  version: 44.176.4
-  resolution: "renovate@npm:44.176.4"
+"renovate@npm:~44.178.5":
+  version: 44.178.5
+  resolution: "renovate@npm:44.178.5"
   dependencies:
     "@aws-sdk/client-codecommit": "npm:3.1139.0"
     "@aws-sdk/client-ec2": "npm:3.1139.0"
@@ -5797,7 +5797,7 @@ __metadata:
     "@opentelemetry/resource-detector-aws": "npm:2.23.0"
     "@opentelemetry/resource-detector-azure": "npm:0.31.0"
     "@opentelemetry/resource-detector-gcp": "npm:0.58.0"
-    "@opentelemetry/resource-detector-github": "npm:0.32.0"
+    "@opentelemetry/resource-detector-github": "npm:0.33.0"
     "@opentelemetry/resources": "npm:2.12.0"
     "@opentelemetry/sdk-trace-base": "npm:2.12.0"
     "@opentelemetry/sdk-trace-node": "npm:2.12.0"
@@ -5805,7 +5805,7 @@ __metadata:
     "@pnpm/parse-overrides": "npm:1001.0.4"
     "@qnighy/marshal": "npm:0.1.3"
     "@redis/client": "npm:6.3.0"
-    "@renovatebot/base-image": "npm:13.139.3"
+    "@renovatebot/base-image": "npm:13.140.2"
     "@renovatebot/detect-tools": "npm:4.0.23"
     "@renovatebot/good-enough-parser": "npm:2.0.1"
     "@renovatebot/osv-offline": "npm:3.0.12"
@@ -5846,7 +5846,7 @@ __metadata:
     github-url-from-git: "npm:1.5.0"
     glob: "npm:13.0.6"
     global-agent: "npm:3.0.0"
-    google-auth-library: "npm:11.3.0"
+    google-auth-library: "npm:11.3.1"
     got: "npm:16.1.0"
     graph-data-structure: "npm:4.5.0"
     handlebars: "npm:4.7.10"
@@ -5906,7 +5906,7 @@ __metadata:
   bin:
     renovate: dist/renovate.js
     renovate-config-validator: dist/config-validator.js
-  checksum: 10c0/a317ee4a1a7845028a4fd2dc76d2be1e5e1847a7730093666630794145add6bd0c0953be09c1ee57dde6d89b05ff88ad63c17ae4e05843e8fa411ed267dfc36f
+  checksum: 10c0/1b836659c18551daef83e7f14f737334aa77149d377e456c18abbb21fc02e489c46102143cc7fe452a8eb4b5cc4ca41c4db8315c58a51d296698a5411347557b
   languageName: node
   linkType: hard
 
