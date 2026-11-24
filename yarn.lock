@@ -633,7 +633,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@biomejs/biome@npm:~2.6.2":
+"@biomejs/biome@npm:~2.6.3":
   version: 2.6.8
   resolution: "@biomejs/biome@npm:2.6.8"
   dependencies:
@@ -927,8 +927,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@nsheaps/renovate-config@workspace:."
   dependencies:
-    "@biomejs/biome": "npm:~2.6.2"
-    renovate: "npm:~44.181.1"
+    "@biomejs/biome": "npm:~2.6.3"
+    renovate: "npm:~44.181.5"
   languageName: unknown
   linkType: soft
 
@@ -5770,7 +5770,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"renovate@npm:~44.181.1":
+"renovate@npm:~44.181.5":
   version: 44.181.12
   resolution: "renovate@npm:44.181.12"
   dependencies:
